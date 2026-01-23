@@ -1,0 +1,12 @@
+/* Instance 3*/ 
+nbRackModels = 2; 
+nbCardTypes = 6; 
+nbRacks = 12; 
+RackModels = [ < 150, 8, 150 >,
+< 200, 16, 200> ]; 
+CardTypes = [ < 10, 20 >, 
+< 20, 10 >,
+< 40, 8 >,
+< 50, 4 >,
+< 75, 2 >,
+< 100,1> ];

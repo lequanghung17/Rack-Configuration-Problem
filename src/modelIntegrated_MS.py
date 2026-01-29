@@ -610,7 +610,7 @@ def add_exactly_one_hard(wcnf: WCNF, lits: List[int], vpool: IDPool):
     wcnf.append(lits[:])
 
     # AMO
-    if len(lits) <= 20:
+    if len(lits) <= 4:
         for i in range(len(lits)):
             for j in range(i + 1, len(lits)):
                 wcnf.append([-lits[i], -lits[j]])

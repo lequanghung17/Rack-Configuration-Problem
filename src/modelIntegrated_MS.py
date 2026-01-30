@@ -1016,7 +1016,7 @@ def main():
     ap.add_argument("--inst", default=None, help="run a single instance file (optional)")
     args = ap.parse_args()
 
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) 
     inst_dir = os.path.join(base_dir, "instances")
 
     if args.inst:

@@ -1,3 +1,4 @@
+# RC2
 -Configuration-Problem/.venv/Scripts/python.exe c:/Users/PC/OneDrive/Documents/KLTN/Rack-Configuration-Problem/modelIntegrated_MS.py
 [16:21:36] Reading instances from: c:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem\instances
 [16:21:36] Found 4 files: instance1.txt, instance2.txt, instance3.txt, instance4.txt
@@ -87,3 +88,195 @@ USED_RACK-USES = 5  (<= nbRacks = 9)
       46 |        6 |        1 |      300 |        1 |        2 |        2 |        0 |        1 |        0
 
 [18:35:32] DONE instance4.txt total_time=4834.72s
+
+
+
+
+
+#EvalMaxSAT
+[10:59:11] START instance1.txt
+[10:59:11]   parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[10:59:11]   building WCNF (Integrated + SB3 + load)...
+[10:59:11]   build done in 0.01s (vars=2578, hard=5997, soft=10)
+[10:59:11]   solving EvalMaxSAT: C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem\.\src\EvalMaxSAT_bin ...  
+[10:59:15]   solved in 4.13s, OPT_COST=550
+==============================================================================================================
+Instance: instance1.txt
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        3 |        0 |        0 |        1
+       6 |        2 |        1 |      200 |        6 |        2 |        0 |        0
+       7 |        2 |        2 |      200 |        1 |        2 |        2 |        0
+
+[10:59:15] DONE instance1.txt total_time=4.14s
+(.venv) PS C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem> python src/eval_maxsat.py --inst instances\instance2.txt --openwbo .\src\EvalMaxSAT_bin
+[10:59:24] START instance2.txt
+[10:59:24]   parsed: nbRackModels=2, nbRacks=10, nbCardTypes=4, totalCardInstances=34
+[10:59:24]   building WCNF (Integrated + SB3 + load)...
+[10:59:26]   build done in 1.88s (vars=15356, hard=36148, soft=20)
+[10:59:26]   solving EvalMaxSAT: C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem\.\src\EvalMaxSAT_bin ...  
+[10:59:37]   solved in 10.83s, OPT_COST=1100
+==============================================================================================================
+Instance: instance2.txt
+OPT_COST = 1100
+USED_RACK-USES = 6  (<= nbRacks = 10)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        0 |        0 |        0 |        2
+       2 |        1 |        2 |      150 |        4 |        0 |        1 |        0
+      11 |        2 |        1 |      200 |        0 |        5 |        0 |        0
+      12 |        2 |        2 |      200 |        5 |        1 |        1 |        0
+      13 |        2 |        3 |      200 |        1 |        2 |        2 |        0
+      14 |        2 |        4 |      200 |       10 |        0 |        0 |        0
+
+[10:59:37] DONE instance2.txt total_time=12.74s
+(.venv) PS C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem> python src/eval_maxsat.py --inst instances\instance3.txt --openwbo .\src\EvalMaxSAT_bin
+[11:00:02] START instance3.txt
+[11:00:02]   parsed: nbRackModels=2, nbRacks=12, nbCardTypes=6, totalCardInstances=45
+[11:00:02]   building WCNF (Integrated + SB3 + load)...
+[11:00:08]   build done in 5.33s (vars=29955, hard=69179, soft=24)
+[11:00:08]   solving EvalMaxSAT: C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem\.\src\EvalMaxSAT_bin ...  
+[12:36:27]   solved in 5779.22s, OPT_COST=1200
+==============================================================================================================
+Instance: instance3.txt
+OPT_COST = 1200
+USED_RACK-USES = 7  (<= nbRacks = 12)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        2 |        0 |        2 |        1 |        0 |        0
+       2 |        1 |        2 |      150 |        0 |        0 |        0 |        0 |        2 |        0
+       3 |        1 |        3 |      150 |        3 |        0 |        3 |        0 |        0 |        0
+       4 |        1 |        4 |      150 |        4 |        4 |        0 |        0 |        0 |        0
+      13 |        2 |        1 |      200 |        2 |        4 |        0 |        2 |        0 |        0
+      14 |        2 |        2 |      200 |        4 |        2 |        3 |        0 |        0 |        0
+      15 |        2 |        3 |      200 |        5 |        0 |        0 |        1 |        0 |        1
+
+[12:36:27] DONE instance3.txt total_time=5784.57s
+(.venv) PS C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem> python src/eval_maxsat.py --inst instances\instance4.txt --openwbo .\src\EvalMaxSAT_bin
+[12:47:16] START instance4.txt
+[12:47:16]   parsed: nbRackModels=6, nbRacks=9, nbCardTypes=6, totalCardInstances=25
+[12:47:16]   building WCNF (Integrated + SB3 + load)...
+[12:47:16]   build done in 0.18s (vars=21881, hard=52573, soft=54)
+[12:47:16]   solving EvalMaxSAT: C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem\.\src\EvalMaxSAT_bin ...  
+[13:34:22]   solved in 2825.63s, OPT_COST=1150
+==============================================================================================================
+Instance: instance4.txt
+OPT_COST = 1150
+USED_RACK-USES = 9  (<= nbRacks = 9)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |       50 |        2 |        0 |        0 |        0 |        0 |        0
+      10 |        2 |        1 |      100 |        0 |        0 |        0 |        0 |        1 |        0
+      11 |        2 |        2 |      100 |        0 |        0 |        0 |        0 |        1 |        0
+      12 |        2 |        3 |      100 |        3 |        1 |        0 |        0 |        0 |        0
+      13 |        2 |        4 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      14 |        2 |        5 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      19 |        3 |        1 |      150 |        0 |        0 |        0 |        2 |        0 |        0
+      20 |        3 |        2 |      150 |        0 |        0 |        0 |        0 |        0 |        1
+      46 |        6 |        1 |      300 |        3 |        1 |        4 |        0 |        0 |        0
+
+[13:34:22] DONE instance4.txt total_time=2825.80s
+
+
+
+
+# open_wbo
+
+[13:19:30] START instance1.txt
+[13:19:30]   parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[13:19:30]   building WCNF (Integrated + SB3 + load)...
+[13:19:30]   build done in 0.02s (vars=2578, hard=5997, soft=10)
+[13:19:30]   solving Open-WBO: C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem\.\src\open-wbo-inc_static ...
+[13:19:34]   solved in 4.00s, OPT_COST=550
+==============================================================================================================      
+Instance: instance1.txt
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        0 |        1 |        2 |        0
+       6 |        2 |        1 |      200 |        4 |        1 |        0 |        1
+       7 |        2 |        2 |      200 |        6 |        2 |        0 |        0
+
+[13:19:34] DONE instance1.txt total_time=4.02s
+(.venv) PS C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem> python src/open_wbo.py --inst instances\instance2.txt --openwbo .\src\open-wbo-inc_static
+[13:19:41] START instance2.txt
+[13:19:41]   parsed: nbRackModels=2, nbRacks=10, nbCardTypes=4, totalCardInstances=34
+[13:19:41]   building WCNF (Integrated + SB3 + load)...
+[13:19:42]   build done in 1.62s (vars=15356, hard=36148, soft=20)
+[13:19:42]   solving Open-WBO: C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem\.\src\open-wbo-inc_static ...
+[13:19:47]   solved in 4.18s, OPT_COST=1100
+==============================================================================================================      
+Instance: instance2.txt
+OPT_COST = 1100
+USED_RACK-USES = 6  (<= nbRacks = 10)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        1 |        3 |        0 |        0
+       2 |        1 |        2 |      150 |        3 |        1 |        1 |        0
+      11 |        2 |        1 |      200 |        4 |        3 |        0 |        0
+      12 |        2 |        2 |      200 |       10 |        0 |        0 |        0
+      13 |        2 |        3 |      200 |        2 |        0 |        0 |        2
+      14 |        2 |        4 |      200 |        0 |        1 |        3 |        0
+
+[13:19:47] DONE instance2.txt total_time=5.81s
+(.venv) PS C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem> python src/open_wbo.py --inst instances\instance3.txt --openwbo .\src\open-wbo-inc_static
+[13:20:19] START instance3.txt
+[13:20:19]   parsed: nbRackModels=2, nbRacks=12, nbCardTypes=6, totalCardInstances=45
+[13:20:19]   building WCNF (Integrated + SB3 + load)...
+[13:20:24]   build done in 4.70s (vars=29955, hard=69179, soft=24)
+[13:20:24]   solving Open-WBO: C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem\.\src\open-wbo-inc_static ...
+[14:11:16]   solved in 3051.75s, OPT_COST=1200
+==============================================================================================================      
+Instance: instance3.txt
+OPT_COST = 1200
+USED_RACK-USES = 8  (<= nbRacks = 12)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------      
+       1 |        1 |        1 |      150 |        6 |        0 |        2 |        0 |        0 |        0
+       2 |        1 |        2 |      150 |        4 |        1 |        2 |        0 |        0 |        0
+       3 |        1 |        3 |      150 |        6 |        0 |        2 |        0 |        0 |        0
+       4 |        1 |        4 |      150 |        0 |        0 |        0 |        0 |        2 |        0
+       5 |        1 |        5 |      150 |        2 |        4 |        0 |        1 |        0 |        0
+       6 |        1 |        6 |      150 |        0 |        0 |        0 |        3 |        0 |        0
+       7 |        1 |        7 |      150 |        1 |        0 |        1 |        0 |        0 |        1
+       8 |        1 |        8 |      150 |        1 |        5 |        1 |        0 |        0 |        0
+
+[14:11:16] DONE instance3.txt total_time=3056.46s
+(.venv) PS C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem> python src/open_wbo.py --inst instances\instance4.txt --openwbo .\src\open-wbo-inc_static
+[14:11:47] START instance4.txt
+[14:11:47]   parsed: nbRackModels=6, nbRacks=9, nbCardTypes=6, totalCardInstances=25
+[14:11:47]   building WCNF (Integrated + SB3 + load)...
+[14:11:47]   build done in 0.18s (vars=21881, hard=52573, soft=54)
+[14:11:47]   solving Open-WBO: C:\Users\PC\OneDrive\Documents\KLTN\Rack-Configuration-Problem\.\src\open-wbo-inc_static ...
+[15:22:10]   solved in 4223.15s, OPT_COST=1150
+==============================================================================================================      
+Instance: instance4.txt
+OPT_COST = 1150
+USED_RACK-USES = 9  (<= nbRacks = 9)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------      
+      10 |        2 |        1 |      100 |        0 |        0 |        0 |        0 |        1 |        0
+      11 |        2 |        2 |      100 |        1 |        0 |        0 |        1 |        0 |        0
+      12 |        2 |        3 |      100 |        3 |        1 |        0 |        0 |        0 |        0
+      13 |        2 |        4 |      100 |        0 |        0 |        0 |        0 |        1 |        0
+      19 |        3 |        1 |      150 |        1 |        2 |        1 |        0 |        0 |        0
+      20 |        3 |        2 |      150 |        1 |        0 |        1 |        1 |        0 |        0
+      21 |        3 |        3 |      150 |        0 |        0 |        0 |        0 |        0 |        1
+      22 |        3 |        4 |      150 |        3 |        1 |        1 |        0 |        0 |        0
+      23 |        3 |        5 |      150 |        1 |        2 |        1 |        0 |        0 |        0
+
+[15:22:10] DONE instance4.txt total_time=4223.38s
+
+
+

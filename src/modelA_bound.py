@@ -429,6 +429,8 @@ def list_instance_files(inst_dir: str) -> List[str]:
 
 
 def run_one(path: str):
+    print(f"START {name}", flush=True)
+
     name = os.path.basename(path)
     try:
         inst = parse_instance_file(path)

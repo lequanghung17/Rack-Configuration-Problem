@@ -1,0 +1,3 @@
+timeout 7200 /usr/bin/time -p python src/modelIntegrated_MS.py --inst instances/instance4.txt
+timeout 7200 /usr/bin/time -p python src/eval_maxsat.py --inst instances/instance4.txt --openwbo ./src/EvalMaxSAT_bin
+timeout 7200 /usr/bin/time -p python src/open_wbo.py --inst instances/instance4.txt --openwbo ./src/open-wbo-inc_static

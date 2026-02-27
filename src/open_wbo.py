@@ -374,15 +374,15 @@ class IntegratedModelMaxSAT:
             cmd = ["wsl", "-d", "Ubuntu", "--", solver_wsl]
             if extra_args:
                 cmd += extra_args
-            if "-print-model" not in cmd:
-                cmd += ["-print-model"]
+            # if "-print-model" not in cmd:
+            #     cmd += ["-print-model"]
             cmd += [wcnf_wsl]
         else:
             cmd = [openwbo_path]
             if extra_args:
                 cmd += extra_args
-            if "-print-model" not in cmd:
-                cmd += ["-print-model"]
+            # if "-print-model" not in cmd:
+            #     cmd += ["-print-model"]
             cmd += [wcnf_path]
 
         proc = subprocess.run(cmd, capture_output=True, text=True)
@@ -405,7 +405,11 @@ class IntegratedModelMaxSAT:
                 status = line[2:].strip()
             elif line.startswith("o "):
                 try:
-                    costs.append(int(line[2:].strip()))
+                    # costs.append(int(line[2:].strip()))
+                   
+                    m = re.match(r"^o\s*[:=]?\s*(\d+)\s*$", line)
+                    if m:
+                        costs.append(int(m.group(1)))
                 except Exception:
                     pass
             elif line.startswith("v "):
@@ -422,6 +426,11 @@ class IntegratedModelMaxSAT:
         if status and ("UNSAT" in status.upper()):
             return None
         if not costs:
+            print("CMD:", " ".join(cmd))
+            print("RET:", proc.returncode)
+            print("---- solver output (first 2000 chars) ----")
+            print(text[:2000])
+            print("------------------------------------------")
             raise RuntimeError(
                 "Open-WBO output missing objective line 'o <cost>' (or solver failed). "
                 "Try adding verbosity, e.g. --openwbo_args -verbosity=1"

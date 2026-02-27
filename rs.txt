@@ -1,0 +1,637 @@
+# RC2
+(.venv39) hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p python src/modelIntegrated_MS.py --inst instances/instance1.txt
+[16:20:54] START instance1.txt
+[16:20:54]   parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[16:20:54]   building WCNF (Integrated + SB3 + load)...
+[16:20:54]   build done in 0.02s (vars=2578, hard=5997, soft=10)
+[16:20:54]   solving RC2(g42)...
+[16:20:54]   solved in 0.01s, OPT_COST=550
+==============================================================================================================
+Instance: instance1.txt
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        7 |        0 |        0 |        0
+       6 |        2 |        1 |      200 |        2 |        2 |        0 |        1
+       7 |        2 |        2 |      200 |        1 |        2 |        2 |        0
+
+[16:20:54] DONE instance1.txt total_time=0.03s
+real 0.23
+user 0.10
+sys 0.02
+(.venv39) hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p python src/modelIntegrated_MS.py --inst instances/instance2.
+txt
+[16:23:14] START instance2.txt
+[16:23:14]   parsed: nbRackModels=2, nbRacks=10, nbCardTypes=4, totalCardInstances=34
+[16:23:14]   building WCNF (Integrated + SB3 + load)...
+[16:23:16]   build done in 1.52s (vars=15356, hard=36148, soft=20)
+[16:23:16]   solving RC2(g42)...
+[16:23:21]   solved in 5.70s, OPT_COST=1100
+==============================================================================================================
+Instance: instance2.txt
+OPT_COST = 1100
+USED_RACK-USES = 6  (<= nbRacks = 10)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        5 |        0 |        1 |        0
+       2 |        1 |        2 |      150 |        5 |        0 |        1 |        0
+      11 |        2 |        1 |      200 |        0 |        3 |        0 |        1
+      12 |        2 |        2 |      200 |        2 |        4 |        0 |        0
+      13 |        2 |        3 |      200 |        8 |        1 |        0 |        0
+      14 |        2 |        4 |      200 |        0 |        0 |        2 |        1
+
+[16:23:21] DONE instance2.txt total_time=7.22s
+real 7.32
+user 6.63
+sys 0.07
+(.venv39) hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p python src/modelIntegrated_MS.py --inst instances/instance3.
+txt
+[16:23:30] START instance3.txt
+[16:23:30]   parsed: nbRackModels=2, nbRacks=12, nbCardTypes=6, totalCardInstances=45
+[16:23:30]   building WCNF (Integrated + SB3 + load)...
+[16:23:35]   build done in 4.46s (vars=29955, hard=69179, soft=24)
+[16:23:35]   solving RC2(g42)...
+[17:30:29]   solved in 4014.36s, OPT_COST=1200
+==============================================================================================================
+Instance: instance3.txt
+OPT_COST = 1200
+USED_RACK-USES = 7  (<= nbRacks = 12)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        6 |        0 |        1 |        1 |        0 |        0
+       2 |        1 |        2 |      150 |        5 |        0 |        0 |        0 |        0 |        1
+       3 |        1 |        3 |      150 |        0 |        0 |        2 |        1 |        0 |        0
+       4 |        1 |        4 |      150 |        3 |        0 |        1 |        0 |        1 |        0
+      13 |        2 |        1 |      200 |        2 |        0 |        2 |        2 |        0 |        0
+      14 |        2 |        2 |      200 |        0 |       10 |        0 |        0 |        0 |        0
+      15 |        2 |        3 |      200 |        4 |        0 |        2 |        0 |        1 |        0
+
+[17:30:29] DONE instance3.txt total_time=4018.86s
+real 4019.24
+user 3973.33
+sys 44.64
+(.venv39) hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p python src/modelIntegrated_MS.py --inst instances/instance4.
+txt
+[19:12:01] START instance4.txt
+[19:12:01]   parsed: nbRackModels=6, nbRacks=9, nbCardTypes=6, totalCardInstances=25
+[19:12:01]   building WCNF (Integrated + SB3 + load)...
+[19:12:01]   build done in 0.11s (vars=21881, hard=52573, soft=54)
+[19:12:01]   solving RC2(g42)...
+[20:10:23]   solved in 3501.46s, OPT_COST=1150
+==============================================================================================================
+Instance: instance4.txt
+OPT_COST = 1150
+USED_RACK-USES = 7  (<= nbRacks = 9)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+      10 |        2 |        1 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      11 |        2 |        2 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      19 |        3 |        1 |      150 |        5 |        0 |        1 |        0 |        0 |        0
+      20 |        3 |        2 |      150 |        0 |        0 |        0 |        0 |        0 |        1
+      28 |        4 |        1 |      200 |        0 |        0 |        1 |        2 |        0 |        0
+      29 |        4 |        2 |      200 |        1 |        2 |        2 |        0 |        0 |        0
+      37 |        5 |        1 |      250 |        2 |        0 |        0 |        0 |        2 |        0
+
+[20:10:23] DONE instance4.txt total_time=3501.58s
+real 3501.89
+user 3468.27
+sys 33.59
+
+
+# eval_maxsat
+
+(.venv39) hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p python src/eval_maxsat.py --inst instances/instance1.txt --o
+penwbo ./src/EvalMaxSAT_bin
+[21:55:29] START instance1.txt
+[21:55:29]   parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[21:55:29]   building WCNF (Integrated + SB3 + load)...
+[21:55:29]   build done in 0.02s (vars=2578, hard=5997, soft=10)
+[21:55:29]   solving EvalMaxSAT: /home/hungle/RCP_bench/./src/EvalMaxSAT_bin ...
+[21:55:29]   solved in 0.51s, OPT_COST=550
+==============================================================================================================
+Instance: instance1.txt
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        3 |        0 |        0 |        1
+       6 |        2 |        1 |      200 |        6 |        2 |        0 |        0
+       7 |        2 |        2 |      200 |        1 |        2 |        2 |        0
+
+[21:55:29] DONE instance1.txt total_time=0.54s
+real 0.77
+user 0.59
+sys 0.08
+(.venv39) hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p python src/eval_maxsat.py --inst instances/instance2.txt --o
+penwbo ./src/EvalMaxSAT_bin
+[21:55:40] START instance2.txt
+[21:55:40]   parsed: nbRackModels=2, nbRacks=10, nbCardTypes=4, totalCardInstances=34
+[21:55:40]   building WCNF (Integrated + SB3 + load)...
+[21:55:42]   build done in 1.59s (vars=15356, hard=36148, soft=20)
+[21:55:42]   solving EvalMaxSAT: /home/hungle/RCP_bench/./src/EvalMaxSAT_bin ...
+[21:55:53]   solved in 11.59s, OPT_COST=1100
+==============================================================================================================
+Instance: instance2.txt
+OPT_COST = 1100
+USED_RACK-USES = 6  (<= nbRacks = 10)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        5 |        1 |        0 |        0
+       2 |        1 |        2 |      150 |        0 |        0 |        3 |        0
+      11 |        2 |        1 |      200 |        2 |        4 |        0 |        0
+      12 |        2 |        2 |      200 |        1 |        1 |        1 |        1
+      13 |        2 |        3 |      200 |        2 |        2 |        0 |        1
+      14 |        2 |        4 |      200 |       10 |        0 |        0 |        0
+
+[21:55:53] DONE instance2.txt total_time=13.19s
+real 11.41
+user 12.42
+sys 0.07
+(.venv39) hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p python src/eval_maxsat.py --inst instances/instance3.txt --o
+penwbo ./src/EvalMaxSAT_bin
+[21:55:58] START instance3.txt
+[21:55:58]   parsed: nbRackModels=2, nbRacks=12, nbCardTypes=6, totalCardInstances=45
+[21:55:58]   building WCNF (Integrated + SB3 + load)...
+[21:56:03]   build done in 4.59s (vars=29955, hard=69179, soft=24)
+[21:56:03]   solving EvalMaxSAT: /home/hungle/RCP_bench/./src/EvalMaxSAT_bin ...
+[22:29:25]   solved in 2001.75s, OPT_COST=1200
+==============================================================================================================
+Instance: instance3.txt
+OPT_COST = 1200
+USED_RACK-USES = 7  (<= nbRacks = 12)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        3 |        4 |        1 |        0 |        0 |        0
+       2 |        1 |        2 |      150 |        6 |        0 |        1 |        1 |        0 |        0
+       3 |        1 |        3 |      150 |        0 |        0 |        0 |        1 |        0 |        1
+       4 |        1 |        4 |      150 |        3 |        1 |        0 |        0 |        1 |        0
+      13 |        2 |        1 |      200 |        2 |        1 |        4 |        0 |        0 |        0
+      14 |        2 |        2 |      200 |        2 |        0 |        0 |        2 |        1 |        0
+      15 |        2 |        3 |      200 |        4 |        4 |        2 |        0 |        0 |        0
+
+[22:29:25] DONE instance3.txt total_time=2006.34s
+real 2006.47
+user 2004.67
+sys 0.67
+(.venv39) hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p python src/eval_maxsat.py --inst instances/instance4.txt --o
+penwbo ./src/EvalMaxSAT_bin
+[22:29:47] START instance4.txt
+[22:29:47]   parsed: nbRackModels=6, nbRacks=9, nbCardTypes=6, totalCardInstances=25
+[22:29:47]   building WCNF (Integrated + SB3 + load)...
+[22:29:47]   build done in 0.13s (vars=21881, hard=52573, soft=54)
+[22:29:47]   solving EvalMaxSAT: /home/hungle/RCP_bench/./src/EvalMaxSAT_bin ...
+[23:11:21]   solved in 2493.69s, OPT_COST=1150
+==============================================================================================================
+Instance: instance4.txt
+OPT_COST = 1150
+USED_RACK-USES = 9  (<= nbRacks = 9)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |       50 |        0 |        0 |        1 |        0 |        0 |        0
+       2 |        1 |        2 |       50 |        0 |        0 |        1 |        0 |        0 |        0
+      10 |        2 |        1 |      100 |        1 |        0 |        0 |        1 |        0 |        0
+      11 |        2 |        2 |      100 |        3 |        1 |        0 |        0 |        0 |        0
+      12 |        2 |        3 |      100 |        1 |        0 |        0 |        1 |        0 |        0
+      13 |        2 |        4 |      100 |        3 |        1 |        0 |        0 |        0 |        0
+      14 |        2 |        5 |      100 |        0 |        0 |        0 |        0 |        1 |        0
+      37 |        5 |        1 |      250 |        2 |        4 |        1 |        0 |        0 |        0
+      46 |        6 |        1 |      300 |        0 |        0 |        1 |        0 |        1 |        1
+
+[23:11:21] DONE instance4.txt total_time=2493.83s
+real 2493.93
+user 2493.25
+sys 1.42
+
+
+@ open_wbo
+
+hungle@qHung17-ASUS:~/RCP_bench$ for i in 1 2 3 4; do timeout 7200 /usr/bin/time -p python src/open_wbo.py --in
+st instances/instance${i}.txt --openwbo ./src/open-wbo-inc_static; done
+[00:14:52] START instance1.txt
+[00:14:52]   parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[00:14:52]   building WCNF (Integrated + SB3 + load)...
+[00:14:52]   build done in 0.02s (vars=2578, hard=5997, soft=10)
+[00:14:52]   solving Open-WBO: /home/hungle/RCP_bench/./src/open-wbo-inc_static ...
+[00:14:52]   solved in 0.04s, OPT_COST=550
+==============================================================================================================
+Instance: instance1.txt
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        0 |        1 |        2 |        0
+       6 |        2 |        1 |      200 |        4 |        1 |        0 |        1
+       7 |        2 |        2 |      200 |        6 |        2 |        0 |        0
+
+[00:14:52] DONE instance1.txt total_time=0.06s
+real 0.24
+user 0.12
+sys 0.01
+[00:14:52] START instance2.txt
+[00:14:52]   parsed: nbRackModels=2, nbRacks=10, nbCardTypes=4, totalCardInstances=34
+[00:14:52]   building WCNF (Integrated + SB3 + load)...
+[00:14:54]   build done in 1.63s (vars=15356, hard=36148, soft=20)
+[00:14:54]   solving Open-WBO: /home/hungle/RCP_bench/./src/open-wbo-inc_static ...
+[00:14:59]   solved in 5.48s, OPT_COST=1100
+==============================================================================================================
+Instance: instance2.txt
+OPT_COST = 1100
+USED_RACK-USES = 7  (<= nbRacks = 10)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        7 |        0 |        0 |        0
+       2 |        1 |        2 |      150 |        1 |        3 |        0 |        0
+       3 |        1 |        3 |      150 |        0 |        0 |        0 |        2
+       4 |        1 |        4 |      150 |        0 |        0 |        3 |        0
+       5 |        1 |        5 |      150 |        1 |        2 |        1 |        0
+       6 |        1 |        6 |      150 |        1 |        3 |        0 |        0
+      11 |        2 |        1 |      200 |       10 |        0 |        0 |        0
+
+[00:14:59] DONE instance2.txt total_time=7.12s
+real 7.23
+user 6.78
+sys 0.06
+[00:14:59] START instance3.txt
+[00:14:59]   parsed: nbRackModels=2, nbRacks=12, nbCardTypes=6, totalCardInstances=45
+[00:14:59]   building WCNF (Integrated + SB3 + load)...
+[00:15:04]   build done in 4.99s (vars=29955, hard=69179, soft=24)
+[00:15:04]   solving Open-WBO: /home/hungle/RCP_bench/./src/open-wbo-inc_static ...
+[00:59:25]   solved in 2660.63s, OPT_COST=1200
+==============================================================================================================
+Instance: instance3.txt
+OPT_COST = 1200
+USED_RACK-USES = 8  (<= nbRacks = 12)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        3 |        4 |        1 |        0 |        0 |        0
+       2 |        1 |        2 |      150 |        2 |        0 |        2 |        1 |        0 |        0
+       3 |        1 |        3 |      150 |        2 |        0 |        0 |        1 |        1 |        0
+       4 |        1 |        4 |      150 |        0 |        0 |        0 |        1 |        0 |        1
+       5 |        1 |        5 |      150 |        3 |        0 |        3 |        0 |        0 |        0
+       6 |        1 |        6 |      150 |        3 |        0 |        1 |        0 |        1 |        0
+       7 |        1 |        7 |      150 |        4 |        1 |        1 |        1 |        0 |        0
+       8 |        1 |        8 |      150 |        3 |        5 |        0 |        0 |        0 |        0
+
+[00:59:25] DONE instance3.txt total_time=2665.63s
+real 2665.90
+user 2653.50
+sys 11.10
+[00:59:25] START instance4.txt
+[00:59:25]   parsed: nbRackModels=6, nbRacks=9, nbCardTypes=6, totalCardInstances=25
+[00:59:25]   building WCNF (Integrated + SB3 + load)...
+[00:59:26]   build done in 0.17s (vars=21881, hard=52573, soft=54)
+[00:59:26]   solving Open-WBO: /home/hungle/RCP_bench/./src/open-wbo-inc_static ...
+[02:05:19]   solved in 3953.84s, OPT_COST=1150
+==============================================================================================================
+Instance: instance4.txt
+OPT_COST = 1150
+USED_RACK-USES = 9  (<= nbRacks = 9)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+      10 |        2 |        1 |      100 |        0 |        0 |        0 |        0 |        1 |        0
+      11 |        2 |        2 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      12 |        2 |        3 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      13 |        2 |        4 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      19 |        3 |        1 |      150 |        7 |        0 |        0 |        0 |        0 |        0
+      20 |        3 |        2 |      150 |        0 |        0 |        1 |        0 |        1 |        0
+      21 |        3 |        3 |      150 |        0 |        0 |        3 |        0 |        0 |        0
+      22 |        3 |        4 |      150 |        0 |        0 |        0 |        0 |        0 |        1
+      23 |        3 |        5 |      150 |        0 |        0 |        0 |        2 |        0 |        0
+
+[02:05:19] DONE instance4.txt total_time=3954.02s
+real 3954.21
+user 3930.74
+sys 24.26
+
+
+
+
+
+
+
+==================== instance1 ====================
+[RC2]
+[16:06:53] START instance1.txt
+[16:06:53]   parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[16:06:53]   building WCNF (Integrated + SB3 + load)...
+[16:06:53]   build done in 0.04s (vars=2578, hard=5997, soft=10)
+[16:06:53]   solving RC2(g42)...
+[16:06:53]   solved in 0.05s, OPT_COST=550
+==============================================================================================================
+Instance: instance1.txt
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        7 |        0 |        0 |        0
+       6 |        2 |        1 |      200 |        2 |        2 |        0 |        1
+       7 |        2 |        2 |      200 |        1 |        2 |        2 |        0
+
+[16:06:53] DONE instance1.txt total_time=0.09s
+real 0.35
+user 0.28
+sys 0.05
+[EvalMaxSAT]
+[16:06:53] START instance1.txt
+[16:06:53]   parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[16:06:53]   building WCNF (Integrated + SB3 + load)...
+[16:06:53]   build done in 0.05s (vars=2578, hard=5997, soft=10)
+[16:06:53]   solving EvalMaxSAT: /home/hungle/RCP_bench/./src/EvalMaxSAT_bin ...
+[16:06:54]   solved in 1.05s, OPT_COST=550
+==============================================================================================================
+Instance: instance1.txt
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        3 |        0 |        0 |        1
+       6 |        2 |        1 |      200 |        6 |        2 |        0 |        0
+       7 |        2 |        2 |      200 |        1 |        2 |        2 |        0
+
+[16:06:54] DONE instance1.txt total_time=1.10s
+real 1.30
+user 1.22
+sys 0.08
+[Open-WBO]
+[16:06:55] START instance1.txt
+[16:06:55]   parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[16:06:55]   building WCNF (Integrated + SB3 + load)...
+[16:06:55]   build done in 0.05s (vars=2578, hard=5997, soft=10)
+[16:06:55]   solving Open-WBO: /home/hungle/RCP_bench/./src/open-wbo-inc_static ...
+RAW output saved to solver_raw.log
+[16:06:55]   solved in 0.03s, OPT_COST=550
+==============================================================================================================
+Instance: instance1.txt
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        0 |        1 |        2 |        0
+       6 |        2 |        1 |      200 |        4 |        1 |        0 |        1
+       7 |        2 |        2 |      200 |        6 |        2 |        0 |        0
+
+[16:06:55] DONE instance1.txt total_time=0.08s
+real 0.27
+user 0.23
+sys 0.03
+==================== instance2 ====================
+[RC2]
+[16:06:55] START instance2.txt
+[16:06:55]   parsed: nbRackModels=2, nbRacks=10, nbCardTypes=4, totalCardInstances=34
+[16:06:55]   building WCNF (Integrated + SB3 + load)...
+[16:06:59]   build done in 3.58s (vars=15356, hard=36148, soft=20)
+[16:06:59]   solving RC2(g42)...
+[16:07:11]   solved in 12.62s, OPT_COST=1100
+==============================================================================================================
+Instance: instance2.txt
+OPT_COST = 1100
+USED_RACK-USES = 6  (<= nbRacks = 10)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        5 |        0 |        1 |        0
+       2 |        1 |        2 |      150 |        5 |        0 |        1 |        0
+      11 |        2 |        1 |      200 |        0 |        3 |        0 |        1
+      12 |        2 |        2 |      200 |        2 |        4 |        0 |        0
+      13 |        2 |        3 |      200 |        8 |        1 |        0 |        0
+      14 |        2 |        4 |      200 |        0 |        0 |        2 |        1
+
+[16:07:11] DONE instance2.txt total_time=16.20s
+real 16.42
+user 16.21
+sys 0.20
+[EvalMaxSAT]
+[16:07:11] START instance2.txt
+[16:07:11]   parsed: nbRackModels=2, nbRacks=10, nbCardTypes=4, totalCardInstances=34
+[16:07:11]   building WCNF (Integrated + SB3 + load)...
+[16:07:14]   build done in 2.57s (vars=15356, hard=36148, soft=20)
+[16:07:14]   solving EvalMaxSAT: /home/hungle/RCP_bench/./src/EvalMaxSAT_bin ...
+[16:07:28]   solved in 14.43s, OPT_COST=1100
+==============================================================================================================
+Instance: instance2.txt
+OPT_COST = 1100
+USED_RACK-USES = 7  (<= nbRacks = 10)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        7 |        0 |        0 |        0
+       2 |        1 |        2 |      150 |        0 |        0 |        0 |        2
+       3 |        1 |        3 |      150 |        5 |        1 |        0 |        0
+       4 |        1 |        4 |      150 |        0 |        0 |        3 |        0
+       5 |        1 |        5 |      150 |        5 |        0 |        1 |        0
+       6 |        1 |        6 |      150 |        1 |        3 |        0 |        0
+      11 |        2 |        1 |      200 |        2 |        4 |        0 |        0
+
+[16:07:28] DONE instance2.txt total_time=17.01s
+real 17.15
+user 17.04
+sys 0.11
+[Open-WBO]
+[16:07:28] START instance2.txt
+[16:07:28]   parsed: nbRackModels=2, nbRacks=10, nbCardTypes=4, totalCardInstances=34
+[16:07:28]   building WCNF (Integrated + SB3 + load)...
+[16:07:31]   build done in 2.62s (vars=15356, hard=36148, soft=20)
+[16:07:31]   solving Open-WBO: /home/hungle/RCP_bench/./src/open-wbo-inc_static ...
+RAW output saved to solver_raw.log
+[16:07:40]   solved in 8.43s, OPT_COST=1100
+==============================================================================================================
+Instance: instance2.txt
+OPT_COST = 1100
+USED_RACK-USES = 7  (<= nbRacks = 10)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        7 |        0 |        0 |        0
+       2 |        1 |        2 |      150 |        1 |        3 |        0 |        0
+       3 |        1 |        3 |      150 |        0 |        0 |        0 |        2
+       4 |        1 |        4 |      150 |        0 |        0 |        3 |        0
+       5 |        1 |        5 |      150 |        1 |        2 |        1 |        0
+       6 |        1 |        6 |      150 |        1 |        3 |        0 |        0
+      11 |        2 |        1 |      200 |       10 |        0 |        0 |        0
+
+[16:07:40] DONE instance2.txt total_time=11.06s
+real 11.21
+user 11.10
+sys 0.11
+==================== instance3 ====================
+[RC2]
+[16:07:40] START instance3.txt
+[16:07:40]   parsed: nbRackModels=2, nbRacks=12, nbCardTypes=6, totalCardInstances=45
+[16:07:40]   building WCNF (Integrated + SB3 + load)...
+[16:07:47]   build done in 7.67s (vars=29955, hard=69179, soft=24)
+[16:07:47]   solving RC2(g42)...
+[17:12:23]   solved in 3875.75s, OPT_COST=1200
+==============================================================================================================
+Instance: instance3.txt
+OPT_COST = 1200
+USED_RACK-USES = 7  (<= nbRacks = 12)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        6 |        0 |        1 |        1 |        0 |        0
+       2 |        1 |        2 |      150 |        5 |        0 |        0 |        0 |        0 |        1
+       3 |        1 |        3 |      150 |        0 |        0 |        2 |        1 |        0 |        0
+       4 |        1 |        4 |      150 |        3 |        0 |        1 |        0 |        1 |        0
+      13 |        2 |        1 |      200 |        2 |        0 |        2 |        2 |        0 |        0
+      14 |        2 |        2 |      200 |        0 |       10 |        0 |        0 |        0 |        0
+      15 |        2 |        3 |      200 |        4 |        0 |        2 |        0 |        1 |        0
+
+[17:12:23] DONE instance3.txt total_time=3883.42s
+real 3883.69
+user 3848.49
+sys 34.81
+[EvalMaxSAT]
+[17:12:23] START instance3.txt
+[17:12:23]   parsed: nbRackModels=2, nbRacks=12, nbCardTypes=6, totalCardInstances=45
+[17:12:23]   building WCNF (Integrated + SB3 + load)...
+[17:12:29]   build done in 5.75s (vars=29955, hard=69179, soft=24)
+[17:12:29]   solving EvalMaxSAT: /home/hungle/RCP_bench/./src/EvalMaxSAT_bin ...
+[18:24:06]   solved in 4296.73s, OPT_COST=1200
+==============================================================================================================
+Instance: instance3.txt
+OPT_COST = 1200
+USED_RACK-USES = 7  (<= nbRacks = 12)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        3 |        4 |        1 |        0 |        0 |        0
+       2 |        1 |        2 |      150 |        6 |        0 |        1 |        1 |        0 |        0
+       3 |        1 |        3 |      150 |        0 |        0 |        0 |        1 |        0 |        1
+       4 |        1 |        4 |      150 |        3 |        1 |        0 |        0 |        1 |        0
+      13 |        2 |        1 |      200 |        2 |        1 |        4 |        0 |        0 |        0
+      14 |        2 |        2 |      200 |        2 |        0 |        0 |        2 |        1 |        0
+      15 |        2 |        3 |      200 |        4 |        4 |        2 |        0 |        0 |        0
+
+[18:24:06] DONE instance3.txt total_time=4302.48s
+real 4302.67
+user 4301.77
+sys 0.83
+[Open-WBO]
+[18:24:06] START instance3.txt
+[18:24:06]   parsed: nbRackModels=2, nbRacks=12, nbCardTypes=6, totalCardInstances=45
+[18:24:06]   building WCNF (Integrated + SB3 + load)...
+[18:24:11]   build done in 4.48s (vars=29955, hard=69179, soft=24)
+[18:24:11]   solving Open-WBO: /home/hungle/RCP_bench/./src/open-wbo-inc_static ...
+RAW output saved to solver_raw.log
+[19:07:19]   solved in 2588.67s, OPT_COST=1200
+==============================================================================================================
+Instance: instance3.txt
+OPT_COST = 1200
+USED_RACK-USES = 8  (<= nbRacks = 12)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        3 |        4 |        1 |        0 |        0 |        0
+       2 |        1 |        2 |      150 |        2 |        0 |        2 |        1 |        0 |        0
+       3 |        1 |        3 |      150 |        2 |        0 |        0 |        1 |        1 |        0
+       4 |        1 |        4 |      150 |        0 |        0 |        0 |        1 |        0 |        1
+       5 |        1 |        5 |      150 |        3 |        0 |        3 |        0 |        0 |        0
+       6 |        1 |        6 |      150 |        3 |        0 |        1 |        0 |        1 |        0
+       7 |        1 |        7 |      150 |        4 |        1 |        1 |        1 |        0 |        0
+       8 |        1 |        8 |      150 |        3 |        5 |        0 |        0 |        0 |        0
+
+[19:07:19] DONE instance3.txt total_time=2593.15s
+real 2593.35
+user 2584.28
+sys 8.73
+==================== instance4 ====================
+[RC2]
+[19:07:19] START instance4.txt
+[19:07:19]   parsed: nbRackModels=6, nbRacks=9, nbCardTypes=6, totalCardInstances=25
+[19:07:19]   building WCNF (Integrated + SB3 + load)...
+[19:07:20]   build done in 0.17s (vars=21881, hard=52573, soft=54)
+[19:07:20]   solving RC2(g42)...
+[20:18:04]   solved in 4244.49s, OPT_COST=1150
+==============================================================================================================
+Instance: instance4.txt
+OPT_COST = 1150
+USED_RACK-USES = 7  (<= nbRacks = 9)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+      10 |        2 |        1 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      11 |        2 |        2 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      19 |        3 |        1 |      150 |        5 |        0 |        1 |        0 |        0 |        0
+      20 |        3 |        2 |      150 |        0 |        0 |        0 |        0 |        0 |        1
+      28 |        4 |        1 |      200 |        0 |        0 |        1 |        2 |        0 |        0
+      29 |        4 |        2 |      200 |        1 |        2 |        2 |        0 |        0 |        0
+      37 |        5 |        1 |      250 |        2 |        0 |        0 |        0 |        2 |        0
+
+[20:18:04] DONE instance4.txt total_time=4244.66s
+real 4244.89
+user 4212.40
+sys 32.20
+[EvalMaxSAT]
+[20:18:04] START instance4.txt
+[20:18:04]   parsed: nbRackModels=6, nbRacks=9, nbCardTypes=6, totalCardInstances=25
+[20:18:04]   building WCNF (Integrated + SB3 + load)...
+[20:18:04]   build done in 0.16s (vars=21881, hard=52573, soft=54)
+[20:18:04]   solving EvalMaxSAT: /home/hungle/RCP_bench/./src/EvalMaxSAT_bin ...
+[21:12:04]   solved in 3239.23s, OPT_COST=1150
+==============================================================================================================
+Instance: instance4.txt
+OPT_COST = 1150
+USED_RACK-USES = 9  (<= nbRacks = 9)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |       50 |        0 |        0 |        1 |        0 |        0 |        0
+       2 |        1 |        2 |       50 |        0 |        0 |        1 |        0 |        0 |        0
+       3 |        1 |        3 |       50 |        0 |        0 |        1 |        0 |        0 |        0
+       4 |        1 |        4 |       50 |        2 |        0 |        0 |        0 |        0 |        0
+       5 |        1 |        5 |       50 |        0 |        0 |        1 |        0 |        0 |        0
+      19 |        3 |        1 |      150 |        0 |        0 |        0 |        0 |        0 |        1
+      28 |        4 |        1 |      200 |        1 |        2 |        0 |        0 |        1 |        0
+      37 |        5 |        1 |      250 |        1 |        2 |        0 |        2 |        0 |        0
+      46 |        6 |        1 |      300 |        6 |        2 |        0 |        0 |        1 |        0
+
+[21:12:04] DONE instance4.txt total_time=3239.38s
+real 3239.53
+user 3238.08
+sys 1.31
+[Open-WBO]
+[21:12:04] START instance4.txt
+[21:12:04]   parsed: nbRackModels=6, nbRacks=9, nbCardTypes=6, totalCardInstances=25
+[21:12:04]   building WCNF (Integrated + SB3 + load)...
+[21:12:04]   build done in 0.15s (vars=21881, hard=52573, soft=54)
+[21:12:04]   solving Open-WBO: /home/hungle/RCP_bench/./src/open-wbo-inc_static ...
+RAW output saved to solver_raw.log
+[22:10:56]   solved in 3532.01s, OPT_COST=1150
+==============================================================================================================
+Instance: instance4.txt
+OPT_COST = 1150
+USED_RACK-USES = 9  (<= nbRacks = 9)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+      10 |        2 |        1 |      100 |        0 |        0 |        0 |        0 |        1 |        0
+      11 |        2 |        2 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      12 |        2 |        3 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      13 |        2 |        4 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      19 |        3 |        1 |      150 |        7 |        0 |        0 |        0 |        0 |        0
+      20 |        3 |        2 |      150 |        0 |        0 |        1 |        0 |        1 |        0
+      21 |        3 |        3 |      150 |        0 |        0 |        3 |        0 |        0 |        0
+      22 |        3 |        4 |      150 |        0 |        0 |        0 |        0 |        0 |        1
+      23 |        3 |        5 |      150 |        0 |        0 |        0 |        2 |        0 |        0
+
+[22:10:56] DONE instance4.txt total_time=3532.16s
+real 3532.35
+user 3515.08
+sys 16.91
+hungle@qHung17-ASUS:~/RCP_bench$ 

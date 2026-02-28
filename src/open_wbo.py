@@ -357,6 +357,20 @@ class IntegratedModelMaxSAT:
           - 'o <num>' (lấy dòng o cuối)
           - 'v <lits ... 0>' (cần -print-model)
         """
+        def write_wcnf_numeric(w: WCNF, path: str, nv: int, topw: int):
+    # Open-WBO expects numeric WCNF:
+    # p wcnf <nv> <nclauses> <top>
+    # <weight> <lit> ... 0
+    # hard clauses have weight = topw
+            nclauses = len(w.hard) + len(w.soft)
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(f"p wcnf {nv} {nclauses} {topw}\n")
+        # hard
+                for cl in w.hard:
+                    f.write(str(topw) + " " + " ".join(map(str, cl)) + " 0\n")
+        # soft
+                for (cl, wt) in zip(w.soft, w.wght):
+                    f.write(str(int(wt)) + " " + " ".join(map(str, cl)) + " 0\n")
         # Ensure WCNF header fields are correct
         self.wcnf.nv = self.vpool.top
         soft_sum = sum(self.wcnf.wght) if getattr(self.wcnf, "wght", None) is not None else 0
@@ -364,7 +378,7 @@ class IntegratedModelMaxSAT:
 
         fd, wcnf_path = tempfile.mkstemp(prefix="rack_", suffix=".wcnf")
         os.close(fd)
-        self.wcnf.to_file(wcnf_path)
+        write_wcnf_numeric(self.wcnf, wcnf_path, nv=self.wcnf.nv, topw=self.wcnf.topw)
 
         # Build command (WSL on Windows)
         if os.name == "nt":
@@ -387,57 +401,147 @@ class IntegratedModelMaxSAT:
 
         proc = subprocess.run(cmd, capture_output=True, text=True)
         text = (proc.stdout or "") + "\n" + (proc.stderr or "")
+        with open("solver_raw.log", "w", encoding="utf-8") as f:
+            f.write(text)
+        print("RAW output saved to solver_raw.log")
 
         try:
             os.remove(wcnf_path)
         except Exception:
             pass
 
+        # status = None
+        # costs: List[int] = []
+        # lits: List[int] = []
+
+        # for line in text.splitlines():
+        #     line = line.strip()
+        #     if not line:
+        #         continue
+        #     if line.startswith("s "):
+        #         status = line[2:].strip()
+        #     elif line.startswith("o "):
+        #         try:
+        #             costs.append(int(line[2:].strip()))
+        #         except Exception:
+        #             pass
+        #     elif line.startswith("v "):
+        #         # Open-WBO prints literals ending with 0
+        #         parts = line[2:].strip().split()
+        #         for p in parts:
+        #             if p == "0":
+        #                 break
+        #             try:
+        #                 lits.append(int(p))
+        #             except Exception:
+        #                 pass
+
+        # if status and ("UNSAT" in status.upper()):
+        #     return None
+        # if not costs:
+        #     print("CMD:", " ".join(cmd))
+        #     print("RET:", proc.returncode)
+        #     print("---- solver output (first 2000 chars) ----")
+        #     print(text[:2000])
+        #     print("------------------------------------------")
+        #     raise RuntimeError(
+        #         "Open-WBO output missing objective line 'o <cost>' (or solver failed). "
+        #         "Try adding verbosity, e.g. --openwbo_args -verbosity=1"
+        #     )
+
+        # opt_cost = costs[-1]
+        # model_set = set(l for l in lits if l > 0)
+         # ---- parse output ----
         status = None
         costs: List[int] = []
-        lits: List[int] = []
 
-        for line in text.splitlines():
-            line = line.strip()
+    # model handling:
+    # - Open-WBO-inc prints literals, sometimes without 0 terminator.
+    # - It may span multiple v-lines. We'll accumulate into cur_model.
+    # - If a line contains a full model (no 0), we still append tokens; at end we take last_model.
+        cur_model: List[int] = []
+        last_model: Optional[List[int]] = None
+
+        o_re = re.compile(r"^(?:c\s+)?o\s*[:=]?\s*(\d+)\s*$")
+
+        for raw in text.splitlines():
+            line = raw.strip()
             if not line:
                 continue
+
             if line.startswith("s "):
                 status = line[2:].strip()
-            elif line.startswith("o "):
-                try:
-                    # costs.append(int(line[2:].strip()))
-                   
-                    m = re.match(r"^o\s*[:=]?\s*(\d+)\s*$", line)
-                    if m:
-                        costs.append(int(m.group(1)))
-                except Exception:
-                    pass
-            elif line.startswith("v "):
-                # Open-WBO prints literals ending with 0
-                parts = line[2:].strip().split()
-                for p in parts:
-                    if p == "0":
-                        break
-                    try:
-                        lits.append(int(p))
-                    except Exception:
-                        pass
+                continue
+
+            mo = o_re.match(line)
+            if mo:
+                costs.append(int(mo.group(1)))
+                continue
+
+            if line.startswith("v "):
+                payload = line[2:].strip()
+                toks = payload.split()
+
+            # If it contains '0', then it's (part of) a DIMACS model terminated by 0.
+                if "0" in toks:
+                    for tok in toks:
+                        if tok == "0":
+                            last_model = cur_model[:]  # commit this model
+                            cur_model.clear()
+                            break
+                        try:
+                            cur_model.append(int(tok))
+                        except Exception:
+                            pass
+                else:
+                # No terminator: still a list of literals (Open-WBO-inc often prints this way).
+                # Append to cur_model, but also allow overwriting last_model at end.
+                    for tok in toks:
+                        try:
+                            cur_model.append(int(tok))
+                        except Exception:
+                            pass
+                continue
+
+    # If solver printed v-lines without '0', the model will be sitting in cur_model
+        if cur_model and last_model is None:
+            last_model = cur_model[:]
 
         if status and ("UNSAT" in status.upper()):
             return None
+
         if not costs:
-            print("CMD:", " ".join(cmd))
-            print("RET:", proc.returncode)
-            print("---- solver output (first 2000 chars) ----")
-            print(text[:2000])
-            print("------------------------------------------")
+            print("CMD:", " ".join(cmd), flush=True)
+            print("RET:", proc.returncode, flush=True)
+            print("---- solver output (first 2000 chars) ----", flush=True)
+            print(text[:2000], flush=True)
+            print("------------------------------------------", flush=True)
             raise RuntimeError(
                 "Open-WBO output missing objective line 'o <cost>' (or solver failed). "
                 "Try adding verbosity, e.g. --openwbo_args -verbosity=1"
             )
 
         opt_cost = costs[-1]
-        model_set = set(l for l in lits if l > 0)
+
+        if last_model is None:
+            print("CMD:", " ".join(cmd), flush=True)
+            print("RET:", proc.returncode, flush=True)
+            print("---- solver output (first 2000 chars) ----", flush=True)
+            print(text[:2000], flush=True)
+            print("------------------------------------------", flush=True)
+            raise RuntimeError("Open-WBO output missing model line 'v ...'.")
+
+        model_set = {l for l in last_model if l > 0}
+
+    # ---- sanity check: decoded cost must match o-last ----
+        decoded_cost = sum(
+            self.Costm(m) for (m, r) in self.P_list
+            if self.w(m, r) in model_set
+        )
+        if decoded_cost != opt_cost:
+            print(f"[WARN] Cost mismatch: o_last={opt_cost} but decoded_from_w={decoded_cost}. "
+                f"Parser/model may be wrong or solver printed different objective meaning.",
+                flush=True)
 
         # Decode (same logic as your RC2/EvalMaxSAT decode)
         active: Dict[Tuple[int, int], int] = {}

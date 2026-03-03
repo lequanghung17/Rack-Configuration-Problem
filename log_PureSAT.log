@@ -1,0 +1,81 @@
+hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p ./.venv39/bin/python src/PureSAT.py \
+  --inst instances/instance1.txt
+[23:17:52] parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[23:17:52] building F1 (Integrated hard constraints + SB3 + load ordering)...
+[23:17:52] done in 0.03s | sat_calls=6 tighten_steps=5 | base_vars=2578 base_clauses=5997
+==============================================================================================================
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        0 |        1 |        2 |        0
+       6 |        2 |        1 |      200 |       10 |        0 |        0 |        0
+       7 |        2 |        2 |      200 |        0 |        3 |        0 |        1
+
+real 0.38
+user 0.17
+sys 0.06
+hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p ./.venv39/bin/python src/PureSAT.py   --inst instances/instance2.t
+xt
+[23:18:14] parsed: nbRackModels=2, nbRacks=10, nbCardTypes=4, totalCardInstances=34
+[23:18:14] building F1 (Integrated hard constraints + SB3 + load ordering)...
+[23:18:19] done in 4.91s | sat_calls=8 tighten_steps=7 | base_vars=15356 base_clauses=36148
+==============================================================================================================
+OPT_COST = 1100
+USED_RACK-USES = 6  (<= nbRacks = 10)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        2 |        1 |        1 |        0
+       2 |        1 |        2 |      150 |        1 |        3 |        0 |        0
+      11 |        2 |        1 |      200 |        4 |        3 |        0 |        0
+      12 |        2 |        2 |      200 |        0 |        0 |        1 |        2
+      13 |        2 |        3 |      200 |        5 |        0 |        2 |        0
+      14 |        2 |        4 |      200 |        8 |        1 |        0 |        0
+
+real 6.66
+user 6.16
+sys 0.05
+hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p ./.venv39/bin/python src/PureSAT.py   --inst instances/instance3.t
+xt
+[23:18:29] parsed: nbRackModels=2, nbRacks=12, nbCardTypes=6, totalCardInstances=45
+[23:18:29] building F1 (Integrated hard constraints + SB3 + load ordering)...
+[23:36:29] done in 1079.46s | sat_calls=8 tighten_steps=7 | base_vars=29955 base_clauses=69179
+==============================================================================================================
+OPT_COST = 1200
+USED_RACK-USES = 6  (<= nbRacks = 12)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+      13 |        2 |        1 |      200 |        6 |        3 |        0 |        0 |        1 |        0
+      14 |        2 |        2 |      200 |        5 |        0 |        0 |        1 |        0 |        1
+      15 |        2 |        3 |      200 |        6 |        1 |        0 |        2 |        0 |        0
+      16 |        2 |        4 |      200 |        0 |        0 |        5 |        0 |        0 |        0
+      17 |        2 |        5 |      200 |        3 |        6 |        0 |        1 |        0 |        0
+      18 |        2 |        6 |      200 |        0 |        0 |        3 |        0 |        1 |        0
+
+real 1085.66
+user 1085.71
+sys 1.04
+hungle@qHung17-ASUS:~/RCP_bench$ timeout 7200 /usr/bin/time -p ./.venv39/bin/python src/PureSAT.py   --inst instances/instance4.t
+xt
+[00:06:12] parsed: nbRackModels=6, nbRacks=9, nbCardTypes=6, totalCardInstances=25
+[00:06:12] building F1 (Integrated hard constraints + SB3 + load ordering)...
+[00:29:58] done in 1425.51s | sat_calls=8 tighten_steps=7 | base_vars=21881 base_clauses=52573
+==============================================================================================================
+OPT_COST = 1150
+USED_RACK-USES = 6  (<= nbRacks = 9)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |       50 |        0 |        0 |        1 |        0 |        0 |        0
+       2 |        1 |        2 |       50 |        0 |        0 |        1 |        0 |        0 |        0
+      28 |        4 |        1 |      200 |        0 |        1 |        0 |        0 |        0 |        1
+      37 |        5 |        1 |      250 |        5 |        0 |        1 |        0 |        1 |        0
+      46 |        6 |        1 |      300 |        0 |        0 |        1 |        2 |        1 |        0
+      47 |        6 |        2 |      300 |        5 |        5 |        0 |        0 |        0 |        0
+
+real 1426.10
+user 1422.26
+sys 3.58

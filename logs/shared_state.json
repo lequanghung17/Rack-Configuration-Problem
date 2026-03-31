@@ -1,0 +1,17 @@
+{
+  "best_source": "MIP",
+  "deadline_ts": 1774945568.775794,
+  "global_lb": null,
+  "global_ub": 2400,
+  "instance": "instances/instance12.txt",
+  "mip_objval": 2400.0,
+  "mip_solve_time_sec": 86.95871236199991,
+  "mip_status": "OPTIMAL",
+  "mip_status_raw": "integer optimal solution",
+  "mip_total_time_sec": 87.31818718199975,
+  "optimal_cost": 2400,
+  "sat_status": null,
+  "status": "OPTIMAL",
+  "total_runtime_sec": 87.71879642800013,
+  "updated_at": 1774942056.4931257
+}

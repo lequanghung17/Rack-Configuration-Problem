@@ -1,0 +1,90 @@
+[20:16:41] parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[20:16:41] model built: use_map_order=True, use_load_order=True
+ ! --------------------------------------------------- CP Optimizer 22.1.2.0 --
+ ! Minimization problem - 207 variables, 274 constraints
+ ! Presolve      : 294 extractables eliminated
+ ! TimeLimit            = 3600
+ ! Initial process time : 0.03s (0.03s extraction + 0.00s propagation)
+ !  . Log search space  : 272.8 (before), 272.8 (after)
+ !  . Memory usage      : 556.5 kB (before), 556.5 kB (after)
+ ! Using parallel search with 12 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        207                 -
+ + New bound is 0
+                        0        207    1   F        -
+ + New bound is 150
+                       44         75    1   F     0 != rel_1_5_2_2
+ + New bound is 151
+ *           950      344  0.07s        1      (gap is 84.11%)
+             950     1000         10    1         0  = rel_2_2_2_2
+ *           700      149  0.07s        2      (gap is 78.43%)
+             700     1000          5    2   F     0  = rel_1_1_2_1
+             700     1000         41    3         0  = rel_2_1_1_8
+             700     1000         19    4   F     0 != rel_2_2_2_3
+             700     1000         12    5         0  = rel_1_1_3_2
+             700     1000         17    6            -
+ *           650      954  0.07s        7      (gap is 76.77%)
+             650     1000          6    7         4  = load_1_5
+             650     1000         29    8   F     0  = rel_2_1_1_10
+             650     1000         16    9         0  = rel_2_5_1_10
+             650     1000         16   10   F     1  = rel_1_5_1_9
+             650     1000         12   11         7  = load_1_5
+             650     1000          9   12   F     0 != rel_2_4_4_1
+             650     2000         17    5   F     0 != w_2_3
+             650     2000         11    2   F     1  = rel_2_2_1_7
+ ! Time = 0.08s, Average fail depth = 13, Memory usage = 12.3 MB
+ ! Current bound is 151 (gap is 76.77%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             650     2000          5    4         0  = rel_2_1_2_4
+             650     2000         17    7   F     1 != map_1_3
+ *           600     1203  0.08s        8      (gap is 74.83%)
+ *           550     1410  0.08s        8      (gap is 72.55%)
+             550     2000          9   12         1 != rel_2_4_1_9
+             550     2000         20    3         1 != rel_1_1_1_7
+             550     2000         12    6         0  = rel_1_1_2_1
+             550     2000          9    8        15 != load_2_3
+             550     2000          5    9   F     1  = rel_2_1_1_5
+             550     2000         11   10   F     6 != map_1_7
+             550     2000         17   11         0  = rel_1_3_1_5
+             550     3000         17   12         3  = map_2_1
+             550     2000         13    1         1 != rel_1_1_1_7
+             550     3000         10    2   F     1 != rel_1_2_2_1
+             550     3000         12    1   F     1  = rel_2_2_1_9
+             550     3000         17    3         1  = map_1_1
+             550     3000         11    4         6  = load_2_1
+             550     3000         14    5            -
+             550     3000          5    6         1 != rel_1_3_1_6
+             550     3000         14    7         1 != map_2_3
+ ! Time = 0.11s, Average fail depth = 25, Memory usage = 14.5 MB
+ ! Current bound is 151 (gap is 72.55%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             550     3000         18    8         3  = map_2_1
+             550     3000         13    9         1 != w_2_3
+             550     3000         13   10            -
+             550     3000         10   11   F     0 != rel_2_1_4_1
+             550     4000         14   12   F     0 != rel_1_2_2_2
+             550     3449         14    1            -
+ + New bound is 550 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 5 solutions found.
+ ! Best objective         : 550 (optimal - effective tol. is 0)
+ ! Best bound             : 550
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 44759
+ ! Number of fails        : 21274
+ ! Total memory usage     : 15.2 MB (15.2 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.11s (0.09s engine + 0.03s extraction)
+ ! Search speed (br. / s) : 559487.5
+ ! ----------------------------------------------------------------------------
+[20:16:41] done in 0.22s | solve_status=Optimal | execfile=/home/hungle/RCP_bench/.venv39/bin/cpoptimizer
+==============================================================================================================
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        3 |        0 |        0 |        1
+       6 |        2 |        1 |      200 |        4 |        3 |        0 |        0
+       7 |        2 |        2 |      200 |        3 |        1 |        2 |        0
+

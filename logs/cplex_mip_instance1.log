@@ -1,0 +1,97 @@
+[11:12:41] parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[11:12:41] model built: use_map_order=True, use_load_order=True, threads=1
+Version identifier: 22.1.2.0 | 2024-11-26 | 0edbb82fd
+CPXPARAM_Read_DataCheck                          1
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               3600
+Tried aggregator 2 times.
+MIP Presolve eliminated 11 rows and 0 columns.
+MIP Presolve modified 350 coefficients.
+Aggregator did 15 substitutions.
+Reduced MIP has 248 rows, 191 columns, and 1318 nonzeros.
+Reduced MIP has 180 binaries, 11 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.03 sec. (1.85 ticks)
+Found incumbent of value 850.000000 after 0.09 sec. (3.74 ticks)
+Probing fixed 4 vars, tightened 0 bounds.
+Probing time = 0.01 sec. (2.16 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 4 rows and 4 columns.
+MIP Presolve modified 56 coefficients.
+Reduced MIP has 244 rows, 187 columns, and 1286 nonzeros.
+Reduced MIP has 176 binaries, 11 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.41 ticks)
+Probing time = 0.00 sec. (2.02 ticks)
+Clique table members: 818.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.03 sec. (4.13 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          850.0000        0.0000           100.00%
+      0     0      189.2308    87      850.0000      189.2308      250   77.74%
+      0     0      200.0000    57      850.0000      Cuts: 79      289   76.47%
+*     0+    0                          600.0000      200.0000            66.67%
+      0     0      540.0000    43      600.0000      Cuts: 51      644   10.00%
+Detecting symmetries...
+
+Repeating presolve.
+Tried aggregator 2 times.
+MIP Presolve eliminated 68 rows and 59 columns.
+Aggregator did 1 substitutions.
+Reduced MIP has 175 rows, 127 columns, and 860 nonzeros.
+Reduced MIP has 119 binaries, 8 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.79 ticks)
+Probing time = 0.00 sec. (0.72 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 175 rows, 127 columns, and 860 nonzeros.
+Reduced MIP has 119 binaries, 8 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.67 ticks)
+Represolve time = 0.01 sec. (3.13 ticks)
+Probing time = 0.00 sec. (0.73 ticks)
+Clique table members: 592.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (3.18 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          600.0000      540.0000            10.00%
+      0     0      540.0000    69      600.0000      540.0000      832   10.00%
+*     0     0      integral     0      550.0000      550.0000      872    0.00%
+Elapsed time = 0.30 sec. (61.97 ticks, tree = 0.01 MB, solutions = 3)
+
+Clique cuts applied:  31
+Implied bound cuts applied:  7
+Mixed integer rounding cuts applied:  1
+Zero-half cuts applied:  3
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0.30 sec. (61.98 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.30 sec. (61.98 ticks)
+[11:12:42] done | status=integer optimal solution
+==============================================================================================================
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        0 |        1 |        2 |        0
+       6 |        2 |        1 |      200 |        6 |        0 |        0 |        1
+       7 |        2 |        2 |      200 |        4 |        3 |        0 |        0
+
+parse_sec = 0.001632
+build_sec = 0.183275
+solve_sec = 0.331810
+total_sec = 0.516717

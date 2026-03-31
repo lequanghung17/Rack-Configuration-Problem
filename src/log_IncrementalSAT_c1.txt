@@ -1,0 +1,253 @@
+(.venv39) hungle@qHung17-ASUS:~/RCP_bench$ for i in 1 2 3 4 5 6 7 8 9 10; do   echo "===== Running instance$i =====";   python src/In
+crementalSAT_c1.py     --inst "instances/instance$i.txt"     --time-limit 3600 ; done
+===== Running instance1 =====
+[16:57:16] parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+[16:57:16] building F1 and running assumption-based incremental SAT...
+[16:57:17] done | status=OPTIMAL | sat_calls=6 tighten_steps=5 assumption_solves=5 | base_vars=2578 base_clauses=5997
+==============================================================================================================
+OPT_COST = 550
+USED_RACK-USES = 3  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        3 |        2 |        0 |        0
+       6 |        2 |        1 |      200 |        2 |        2 |        0 |        1
+       7 |        2 |        2 |      200 |        5 |        0 |        2 |        0
+
+status    = OPTIMAL
+parse_sec = 0.000818
+build_sec = 0.033535
+solve_sec = 0.005593
+total_sec = 0.039946
+===== Running instance2 =====
+[16:57:17] parsed: nbRackModels=2, nbRacks=10, nbCardTypes=4, totalCardInstances=34
+[16:57:17] building F1 and running assumption-based incremental SAT...
+[16:57:22] done | status=OPTIMAL | sat_calls=9 tighten_steps=8 assumption_solves=8 | base_vars=15356 base_clauses=36148
+==============================================================================================================
+OPT_COST = 1100
+USED_RACK-USES = 6  (<= nbRacks = 10)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4
+----------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        7 |        0 |        0 |        0
+       2 |        1 |        2 |      150 |        7 |        0 |        0 |        0
+      11 |        2 |        1 |      200 |        2 |        4 |        0 |        0
+      12 |        2 |        2 |      200 |        2 |        2 |        0 |        1
+      13 |        2 |        3 |      200 |        0 |        0 |        4 |        0
+      14 |        2 |        4 |      200 |        2 |        2 |        0 |        1
+
+status    = OPTIMAL
+parse_sec = 0.000676
+build_sec = 2.003855
+solve_sec = 3.558665
+total_sec = 5.563196
+===== Running instance3 =====
+[16:57:24] parsed: nbRackModels=2, nbRacks=12, nbCardTypes=6, totalCardInstances=45
+[16:57:24] building F1 and running assumption-based incremental SAT...
+[17:13:15] done | status=OPTIMAL | sat_calls=8 tighten_steps=7 assumption_solves=7 | base_vars=29955 base_clauses=69179
+==============================================================================================================
+OPT_COST = 1200
+USED_RACK-USES = 6  (<= nbRacks = 12)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+      13 |        2 |        1 |      200 |        4 |        2 |        3 |        0 |        0 |        0
+      14 |        2 |        2 |      200 |        1 |        2 |        0 |        0 |        2 |        0
+      15 |        2 |        3 |      200 |        0 |        3 |        1 |        2 |        0 |        0
+      16 |        2 |        4 |      200 |        1 |        1 |        3 |        1 |        0 |        0
+      17 |        2 |        5 |      200 |        6 |        2 |        1 |        1 |        0 |        0
+      18 |        2 |        6 |      200 |        8 |        0 |        0 |        0 |        0 |        1
+
+status    = OPTIMAL
+parse_sec = 0.000640
+build_sec = 65.128444
+solve_sec = 945.641925
+total_sec = 1010.771008
+===== Running instance4 =====
+[17:13:20] parsed: nbRackModels=6, nbRacks=9, nbCardTypes=6, totalCardInstances=25
+[17:13:20] building F1 and running assumption-based incremental SAT...
+[17:30:06] done | status=OPTIMAL | sat_calls=13 tighten_steps=12 assumption_solves=12 | base_vars=21881 base_clauses=52573
+==============================================================================================================
+OPT_COST = 1150
+USED_RACK-USES = 4  (<= nbRacks = 9)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+      37 |        5 |        1 |      250 |        0 |        1 |        1 |        2 |        0 |        0
+      46 |        6 |        1 |      300 |        0 |        0 |        3 |        0 |        0 |        1
+      47 |        6 |        2 |      300 |        6 |        2 |        0 |        0 |        1 |        0
+      48 |        6 |        3 |      300 |        4 |        3 |        0 |        0 |        1 |        0
+
+status    = OPTIMAL
+parse_sec = 0.000829
+build_sec = 61.825592
+solve_sec = 1007.984359
+total_sec = 1069.810781
+===== Running instance5 =====
+[17:30:07] parsed: nbRackModels=2, nbRacks=5, nbCardTypes=5, totalCardInstances=26
+[17:30:07] building F1 and running assumption-based incremental SAT...
+[17:30:07] done | status=OPTIMAL | sat_calls=3 tighten_steps=2 assumption_solves=2 | base_vars=5714 base_clauses=13116
+==============================================================================================================
+OPT_COST = 700
+USED_RACK-USES = 4  (<= nbRacks = 5)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5
+---------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        0 |        0 |        0 |        0 |        2
+       2 |        1 |        2 |      150 |        3 |        0 |        3 |        0 |        0
+       6 |        2 |        1 |      200 |        8 |        0 |        1 |        0 |        1
+       7 |        2 |        2 |      200 |        1 |        6 |        0 |        1 |        0
+
+status    = OPTIMAL
+parse_sec = 0.003506
+build_sec = 0.101908
+solve_sec = 0.125849
+total_sec = 0.231262
+===== Running instance6 =====
+[17:30:07] parsed: nbRackModels=2, nbRacks=6, nbCardTypes=6, totalCardInstances=25
+[17:30:07] building F1 and running assumption-based incremental SAT...
+[17:30:07] done | status=OPTIMAL | sat_calls=8 tighten_steps=7 assumption_solves=7 | base_vars=6527 base_clauses=14941
+==============================================================================================================
+OPT_COST = 650
+USED_RACK-USES = 4  (<= nbRacks = 6)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        6 |        0 |        1 |        1 |        0 |        0
+       2 |        1 |        2 |      150 |        6 |        0 |        1 |        1 |        0 |        0
+       3 |        1 |        3 |      150 |        0 |        0 |        0 |        0 |        2 |        0
+       7 |        2 |        1 |      200 |        2 |        4 |        0 |        0 |        0 |        1
+
+status    = OPTIMAL
+parse_sec = 0.001525
+build_sec = 0.105336
+solve_sec = 0.117432
+total_sec = 0.224293
+===== Running instance7 =====
+[17:30:07] parsed: nbRackModels=2, nbRacks=7, nbCardTypes=6, totalCardInstances=35
+[17:30:07] building F1 and running assumption-based incremental SAT...
+[17:30:16] done | status=OPTIMAL | sat_calls=6 tighten_steps=5 assumption_solves=5 | base_vars=12719 base_clauses=29208
+==============================================================================================================
+OPT_COST = 850
+USED_RACK-USES = 5  (<= nbRacks = 7)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        0 |        7 |        0 |        0 |        0 |        0
+       2 |        1 |        2 |      150 |        3 |        1 |        0 |        0 |        0 |        1
+       3 |        1 |        3 |      150 |        7 |        0 |        0 |        0 |        1 |        0
+       8 |        2 |        1 |      200 |        0 |        0 |        1 |        3 |        0 |        0
+       9 |        2 |        2 |      200 |        8 |        2 |        0 |        0 |        1 |        0
+
+status    = OPTIMAL
+parse_sec = 0.002931
+build_sec = 2.102575
+solve_sec = 6.865438
+total_sec = 8.970944
+===== Running instance8 =====
+[17:30:18] parsed: nbRackModels=4, nbRacks=8, nbCardTypes=6, totalCardInstances=36
+[17:30:18] building F1 and running assumption-based incremental SAT...
+[17:30:29] done | status=OPTIMAL | sat_calls=9 tighten_steps=8 assumption_solves=8 | base_vars=24036 base_clauses=54607
+==============================================================================================================
+OPT_COST = 900
+USED_RACK-USES = 8  (<= nbRacks = 8)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |       50 |        0 |        0 |        0 |        1 |        0 |        0
+       2 |        1 |        2 |       50 |        0 |        0 |        0 |        1 |        0 |        0
+       3 |        1 |        3 |       50 |        1 |        0 |        1 |        0 |        0 |        0
+      17 |        3 |        1 |      150 |        5 |        0 |        0 |        0 |        0 |        1
+      18 |        3 |        2 |      150 |        3 |        1 |        0 |        0 |        0 |        1
+      19 |        3 |        3 |      150 |        6 |        0 |        2 |        0 |        0 |        0
+      20 |        3 |        4 |      150 |        7 |        0 |        0 |        0 |        1 |        0
+      21 |        3 |        5 |      150 |        3 |        1 |        0 |        0 |        0 |        1
+
+status    = OPTIMAL
+parse_sec = 0.001433
+build_sec = 4.156280
+solve_sec = 9.078582
+total_sec = 13.236295
+===== Running instance9 =====
+[17:30:33] parsed: nbRackModels=6, nbRacks=6, nbCardTypes=6, totalCardInstances=19
+[17:30:33] building F1 and running assumption-based incremental SAT...
+[17:30:59] done | status=OPTIMAL | sat_calls=9 tighten_steps=8 assumption_solves=8 | base_vars=9791 base_clauses=23005
+==============================================================================================================
+OPT_COST = 1000
+USED_RACK-USES = 5  (<= nbRacks = 6)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       7 |        2 |        1 |      100 |        1 |        2 |        0 |        0 |        0 |        0
+      13 |        3 |        1 |      150 |        3 |        0 |        0 |        1 |        0 |        0
+      19 |        4 |        1 |      200 |        0 |        0 |        2 |        0 |        1 |        0
+      25 |        5 |        1 |      250 |        3 |        1 |        0 |        0 |        0 |        1
+      31 |        6 |        1 |      300 |        0 |        0 |        1 |        2 |        1 |        0
+
+status    = OPTIMAL
+parse_sec = 0.003532
+build_sec = 1.450766
+solve_sec = 26.002491
+total_sec = 27.456790
+===== Running instance10 =====
+[17:30:59] parsed: nbRackModels=2, nbRacks=14, nbCardTypes=6, totalCardInstances=57
+[17:30:59] building F1 and running assumption-based incremental SAT...
+[18:27:44] done | status=TIME_LIMIT | sat_calls=9 tighten_steps=8 assumption_solves=8 | base_vars=46255 base_clauses=107154
+==============================================================================================================
+OPT_COST = 1650
+USED_RACK-USES = 10  (<= nbRacks = 14)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |      150 |        6 |        0 |        0 |        0 |        1 |        0
+       2 |        1 |        2 |      150 |        6 |        0 |        2 |        0 |        0 |        0
+       3 |        1 |        3 |      150 |        5 |        0 |        0 |        0 |        0 |        1
+       4 |        1 |        4 |      150 |        5 |        1 |        2 |        0 |        0 |        0
+       5 |        1 |        5 |      150 |        0 |        1 |        1 |        0 |        1 |        0
+       6 |        1 |        6 |      150 |        1 |        2 |        0 |        2 |        0 |        0
+       7 |        1 |        7 |      150 |        1 |        7 |        0 |        0 |        0 |        0
+      15 |        2 |        1 |      200 |        0 |        0 |        0 |        2 |        0 |        1
+      16 |        2 |        2 |      200 |        0 |        0 |        3 |        0 |        1 |        0
+      17 |        2 |        3 |      200 |        0 |        1 |        2 |        2 |        0 |        0
+
+status    = TIME_LIMIT
+parse_sec = 0.003444
+build_sec = 229.025785
+solve_sec = 3371.919797
+total_sec = 3600.949027
+
+
+
+
+===== Running instance11 =====
+[21:37:10] parsed: nbRackModels=6, nbRacks=12, nbCardTypes=6, totalCardInstances=47
+[21:37:10] building F1 and running assumption-based incremental SAT...
+[22:37:17] done | status=TIME_LIMIT | sat_calls=4 tighten_steps=3 assumption_solves=3 | base_vars=68113 base_clauses=171765
+==============================================================================================================
+OPT_COST = 2250
+USED_RACK-USES = 12  (<= nbRacks = 12)
+
+       p |        m |        r |  Cost(m) |    Type1 |    Type2 |    Type3 |    Type4 |    Type5 |    Type6
+--------------------------------------------------------------------------------------------------------------
+       1 |        1 |        1 |       50 |        0 |        0 |        1 |        0 |        0 |        0
+      13 |        2 |        1 |      100 |        0 |        0 |        2 |        0 |        0 |        0
+      14 |        2 |        2 |      100 |        0 |        0 |        0 |        0 |        1 |        0
+      25 |        3 |        1 |      150 |        1 |        0 |        1 |        1 |        0 |        0
+      26 |        3 |        2 |      150 |        1 |        0 |        1 |        1 |        0 |        0
+      37 |        4 |        1 |      200 |        4 |        3 |        0 |        0 |        0 |        0
+      38 |        4 |        2 |      200 |        0 |        0 |        0 |        0 |        2 |        0
+      39 |        4 |        3 |      200 |        4 |        3 |        0 |        0 |        0 |        0
+      49 |        5 |        1 |      250 |        1 |        0 |        3 |        1 |        0 |        0
+      50 |        5 |        2 |      250 |        3 |        1 |        0 |        0 |        0 |        1
+      61 |        6 |        1 |      300 |        0 |        0 |        0 |        2 |        0 |        1
+      62 |        6 |        2 |      300 |        4 |        3 |        0 |        0 |        1 |        0
+
+status    = TIME_LIMIT
+parse_sec = 0.001135
+build_sec = 5.861461
+solve_sec = 3601.006343
+total_sec = 3606.868939
+===== Running instance12 =====
+[22:37:23] parsed: nbRackModels=6, nbRacks=13, nbCardTypes=7, totalCardInstances=62
+[22:37:23] building F1 and running assumption-based incremental SAT...
+[23:38:49] done | status=TIME_LIMIT | sat_calls=14 tighten_steps=13 assumption_solves=13 | base_vars=119655 base_clauses=298739

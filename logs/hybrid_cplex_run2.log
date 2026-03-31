@@ -1,0 +1,369 @@
+=== run2 instance1 ===
+[ORCH 18:28:00] starting workers
+[ORCH 18:28:00] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance1.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:28:00] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance1.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[SAT 18:28:01] built F1 | vars=2578 | clauses=5997
+[MIP-CPLEX 18:28:01] start optimize | threads=1 | time_limit=3599.62s
+[MIP-CPLEX 18:28:01] OPTIMAL by MIP | obj=550.000000 | solve=0.16s | total=0.24s
+[SAT 18:28:01] stop because global status=OPTIMAL
+[ORCH 18:28:01] current global_ub=550 from MIP
+[ORCH 18:28:01] OPTIMAL found: 550 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528080.8703983
+global_lb: None
+global_ub: 550
+instance: instances/instance1.txt
+mip_objval: 550.0
+mip_solve_time_sec: 0.15778475099989464
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 0.24207509999996546
+optimal_cost: 550
+sat_solver_time_sec: 0.0
+sat_status: STOPPED_OPTIMAL
+sat_total_time_sec: 0.5538933309999265
+status: OPTIMAL
+total_runtime_sec: 1.0196221370000558
+updated_at: 1774524481.8875442
+================================================================================
+
+=== run2 instance2 ===
+[ORCH 18:28:02] starting workers
+[ORCH 18:28:02] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance2.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:28:02] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance2.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[MIP-CPLEX 18:28:02] start optimize | threads=1 | time_limit=3599.59s
+[MIP-CPLEX 18:28:04] OPTIMAL by MIP | obj=1100.000000 | solve=1.64s | total=1.78s
+[ORCH 18:28:04] current global_ub=1100 from MIP
+[ORCH 18:28:04] OPTIMAL found: 1100 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528082.0150557
+global_lb: None
+global_ub: 1100
+instance: instances/instance2.txt
+mip_objval: 1100.0
+mip_solve_time_sec: 1.6362262129999863
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 1.7779586830000653
+optimal_cost: 1100
+sat_status: None
+status: OPTIMAL
+total_runtime_sec: 2.540998527999932
+updated_at: 1774524484.5536351
+================================================================================
+
+=== run2 instance3 ===
+[ORCH 18:28:04] starting workers
+[ORCH 18:28:04] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance3.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:28:04] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance3.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[MIP-CPLEX 18:28:05] start optimize | threads=1 | time_limit=3599.66s
+[MIP-CPLEX 18:28:06] OPTIMAL by MIP | obj=1200.000000 | solve=2.99s | total=3.13s
+[ORCH 18:28:06] current global_ub=1200 from MIP
+[ORCH 18:28:06] OPTIMAL found: 1200 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528084.7381392
+global_lb: None
+global_ub: 1200
+instance: instances/instance3.txt
+mip_objval: 1200.0
+mip_solve_time_sec: 2.9885918200000106
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 3.1326549489999707
+optimal_cost: 1200
+sat_status: None
+status: OPTIMAL
+total_runtime_sec: 3.7490413210000497
+updated_at: 1774524486.8133366
+================================================================================
+
+=== run2 instance4 ===
+[ORCH 18:28:06] starting workers
+[ORCH 18:28:06] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance4.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:28:06] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance4.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[SAT 18:28:07] built F1 | vars=21881 | clauses=52573
+[MIP-CPLEX 18:28:07] start optimize | threads=1 | time_limit=3599.65s
+[MIP-CPLEX 18:28:09] OPTIMAL by MIP | obj=1150.000000 | solve=1.73s | total=1.95s
+[SAT 18:28:09] stop because global status=OPTIMAL
+[ORCH 18:28:09] current global_ub=1150 from MIP
+[ORCH 18:28:09] OPTIMAL found: 1150 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528086.8977315
+global_lb: None
+global_ub: 1150
+instance: instances/instance4.txt
+mip_objval: 1150.0
+mip_solve_time_sec: 1.7298165419999805
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 1.9515528800000084
+optimal_cost: 1150
+sat_solver_time_sec: 0.0
+sat_status: STOPPED_OPTIMAL
+sat_total_time_sec: 2.291248967999991
+status: OPTIMAL
+total_runtime_sec: 2.5436888020000197
+updated_at: 1774524489.4397194
+================================================================================
+
+=== run2 instance5 ===
+[ORCH 18:28:09] starting workers
+[ORCH 18:28:09] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance5.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:28:09] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance5.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[SAT 18:28:10] built F1 | vars=5714 | clauses=13116
+[MIP-CPLEX 18:28:10] start optimize | threads=1 | time_limit=3599.61s
+[MIP-CPLEX 18:28:10] OPTIMAL by MIP | obj=700.000000 | solve=0.40s | total=0.52s
+[SAT 18:28:10] stop because global status=OPTIMAL
+[ORCH 18:28:10] current global_ub=700 from MIP
+[ORCH 18:28:10] OPTIMAL found: 700 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528089.5579998
+global_lb: None
+global_ub: 700
+instance: instances/instance5.txt
+mip_objval: 700.0
+mip_solve_time_sec: 0.39775576900001397
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 0.5182155429999966
+optimal_cost: 700
+sat_solver_time_sec: 0.0
+sat_status: STOPPED_OPTIMAL
+sat_total_time_sec: 0.6874984730000051
+status: OPTIMAL
+total_runtime_sec: 1.0206631649999736
+updated_at: 1774524490.5761778
+================================================================================
+
+=== run2 instance6 ===
+[ORCH 18:28:10] starting workers
+[ORCH 18:28:10] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance6.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:28:10] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance6.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[SAT 18:28:11] built F1 | vars=6527 | clauses=14941
+[MIP-CPLEX 18:28:11] start optimize | threads=1 | time_limit=3599.64s
+[MIP-CPLEX 18:28:11] OPTIMAL by MIP | obj=650.000000 | solve=0.35s | total=0.46s
+[SAT 18:28:11] stop because global status=OPTIMAL
+[ORCH 18:28:11] current global_ub=650 from MIP
+[ORCH 18:28:11] OPTIMAL found: 650 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528090.7091827
+global_lb: None
+global_ub: 650
+instance: instances/instance6.txt
+mip_objval: 650.0
+mip_solve_time_sec: 0.3500816279999981
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 0.4588251399999308
+optimal_cost: 650
+sat_solver_time_sec: 0.0
+sat_status: STOPPED_OPTIMAL
+sat_total_time_sec: 0.6693530699999428
+status: OPTIMAL
+total_runtime_sec: 1.0223855330000333
+updated_at: 1774524491.7280545
+================================================================================
+
+=== run2 instance7 ===
+[ORCH 18:28:11] starting workers
+[ORCH 18:28:11] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance7.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:28:11] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance7.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[MIP-CPLEX 18:28:12] start optimize | threads=1 | time_limit=3599.64s
+[MIP-CPLEX 18:28:13] OPTIMAL by MIP | obj=850.000000 | solve=0.84s | total=0.96s
+[ORCH 18:28:13] current global_ub=850 from MIP
+[ORCH 18:28:13] OPTIMAL found: 850 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528091.8410187
+global_lb: None
+global_ub: 850
+instance: instances/instance7.txt
+mip_objval: 850.0
+mip_solve_time_sec: 0.8419406550000303
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 0.9595971380000492
+optimal_cost: 850
+sat_status: None
+status: OPTIMAL
+total_runtime_sec: 1.5209230949999437
+updated_at: 1774524493.3584034
+================================================================================
+
+=== run2 instance8 ===
+[ORCH 18:28:13] starting workers
+[ORCH 18:28:13] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance8.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:28:13] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance8.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[MIP-CPLEX 18:28:14] start optimize | threads=1 | time_limit=3599.48s
+[MIP-CPLEX 18:28:19] OPTIMAL by MIP | obj=900.000000 | solve=5.10s | total=5.27s
+[ORCH 18:28:19] current global_ub=900 from MIP
+[ORCH 18:28:19] OPTIMAL found: 900 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528093.4960575
+global_lb: None
+global_ub: 900
+instance: instances/instance8.txt
+mip_objval: 900.0
+mip_solve_time_sec: 5.102162634000024
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 5.267589788999999
+optimal_cost: 900
+sat_status: None
+status: OPTIMAL
+total_runtime_sec: 6.292638702999966
+updated_at: 1774524499.7851107
+================================================================================
+
+=== run2 instance9 ===
+[ORCH 18:28:19] starting workers
+[ORCH 18:28:19] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance9.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:28:19] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance9.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[SAT 18:28:20] built F1 | vars=9791 | clauses=23005
+[MIP-CPLEX 18:28:20] start optimize | threads=1 | time_limit=3599.69s
+[MIP-CPLEX 18:28:21] OPTIMAL by MIP | obj=1000.000000 | solve=0.71s | total=0.84s
+[SAT 18:28:21] stop because global status=OPTIMAL
+[ORCH 18:28:21] current global_ub=1000 from MIP
+[ORCH 18:28:21] OPTIMAL found: 1000 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528099.8646226
+global_lb: None
+global_ub: 1000
+instance: instances/instance9.txt
+mip_objval: 1000.0
+mip_solve_time_sec: 0.7087867619999315
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 0.8379871380000168
+optimal_cost: 1000
+sat_solver_time_sec: 0.0
+sat_status: STOPPED_OPTIMAL
+sat_total_time_sec: 1.1169929500000535
+status: OPTIMAL
+total_runtime_sec: 1.5223790389999294
+updated_at: 1774524501.3850722
+================================================================================
+
+=== run2 instance10 ===
+[ORCH 18:28:21] starting workers
+[ORCH 18:28:21] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance10.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:28:21] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance10.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[MIP-CPLEX 18:28:22] start optimize | threads=1 | time_limit=3599.66s
+[MIP-CPLEX 18:28:27] OPTIMAL by MIP | obj=1650.000000 | solve=5.72s | total=5.96s
+[ORCH 18:28:28] current global_ub=1650 from MIP
+[ORCH 18:28:28] OPTIMAL found: 1650 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528101.4921398
+global_lb: None
+global_ub: 1650
+instance: instances/instance10.txt
+mip_objval: 1650.0
+mip_solve_time_sec: 5.71876850000001
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 5.958955236000065
+optimal_cost: 1650
+sat_status: None
+status: OPTIMAL
+total_runtime_sec: 6.588628365999966
+updated_at: 1774524508.077806
+================================================================================
+
+=== run2 instance11 ===
+[ORCH 18:28:28] starting workers
+[ORCH 18:28:28] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance11.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:28:28] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance11.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[MIP-CPLEX 18:28:28] start optimize | threads=1 | time_limit=3599.61s
+[SAT 18:28:41] built F1 | vars=68113 | clauses=171765
+[MIP-CPLEX 18:29:59] OPTIMAL by MIP | obj=2250.000000 | solve=95.59s | total=96.01s
+[ORCH 18:29:59] current global_ub=2250 from MIP
+[ORCH 18:29:59] OPTIMAL found: 2250 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528108.181912
+global_lb: None
+global_ub: 2250
+instance: instances/instance11.txt
+mip_objval: 2250.0
+mip_solve_time_sec: 95.58513408099998
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 96.01294794400008
+optimal_cost: 2250
+sat_status: None
+status: OPTIMAL
+total_runtime_sec: 96.43862151199994
+updated_at: 1774524599.4815612
+================================================================================
+
+=== run2 instance12 ===
+[ORCH 18:29:59] starting workers
+[ORCH 18:29:59] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_cplex_worker.py --inst instances/instance12.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:29:59] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance12.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+[MIP-CPLEX 18:30:00] start optimize | threads=1 | time_limit=3599.76s
+[MIP-CPLEX 18:30:53] OPTIMAL by MIP | obj=2400.000000 | solve=57.09s | total=57.34s
+[ORCH 18:30:53] current global_ub=2400 from MIP
+[ORCH 18:30:53] OPTIMAL found: 2400 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774528199.5444913
+global_lb: None
+global_ub: 2400
+instance: instances/instance12.txt
+mip_objval: 2400.0
+mip_solve_time_sec: 57.08726488599996
+mip_status: OPTIMAL
+mip_status_raw: integer optimal solution
+mip_total_time_sec: 57.335746986000004
+optimal_cost: 2400
+sat_status: None
+status: OPTIMAL
+total_runtime_sec: 57.595918556000015
+updated_at: 1774524653.6824553
+================================================================================
+

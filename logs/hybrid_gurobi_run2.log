@@ -1,0 +1,1555 @@
+=== run2 instance1 ===
+[ORCH 18:51:23] starting workers
+[ORCH 18:51:23] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance1.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:51:23] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance1.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:51:23] start optimize | threads=1 | time_limit=3599.92s
+[SAT 18:51:23] built F1 | vars=2578 | clauses=5997
+[SAT 18:51:23] certifying current UB=700 by solving cost <= 699
+[SAT 18:51:23] SAT improved UB: 700 -> 600
+[SAT 18:51:23] certifying current UB=600 by solving cost <= 599
+[SAT 18:51:23] SAT improved UB: 600 -> 550
+[SAT 18:51:23] certifying current UB=550 by solving cost <= 549
+[SAT 18:51:23] OPTIMAL by SAT certificate | no solution with cost <= 549
+[MIP 18:51:23] INTERRUPTED | solve=0.13s | total=0.15s
+[ORCH 18:51:24] current global_ub=550 from SAT
+[ORCH 18:51:24] OPTIMAL found: 550 by SAT
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: SAT
+deadline_ts: 1774529483.736443
+global_lb: None
+global_ub: 550
+instance: instances/instance1.txt
+mip_objbound: 300.0
+mip_objval: 700.0
+mip_solve_time_sec: 0.12503944899981434
+mip_status: INTERRUPTED
+mip_status_code: 11
+mip_total_time_sec: 0.14903418599988072
+optimal_cost: 550
+sat_certified_against: 549
+sat_last_improvement_from: 600
+sat_solver_time_sec: 0.004531183999999994
+sat_status: OPTIMAL
+sat_total_time_sec: 0.06531379500029288
+status: OPTIMAL
+total_runtime_sec: 0.5210601509998014
+updated_at: 1774525884.2554908
+================================================================================
+
+=== run2 instance2 ===
+[ORCH 18:51:24] starting workers
+[ORCH 18:51:24] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance2.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:51:24] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance2.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:51:24] start optimize | threads=1 | time_limit=3599.93s
+[SAT 18:51:27] built F1 | vars=15356 | clauses=36148
+[ORCH 18:51:27] current global_ub=1400 from MIP
+[SAT 18:51:28] certifying current UB=1200 by solving cost <= 1199
+[SAT 18:51:28] SAT improved UB: 1200 -> 1150
+[SAT 18:51:28] certifying current UB=1150 by solving cost <= 1149
+[SAT 18:51:28] SAT improved UB: 1150 -> 1100
+[SAT 18:51:28] certifying current UB=1100 by solving cost <= 1099
+[ORCH 18:51:28] current global_ub=1100 from SAT
+[ORCH 18:51:27] current global_ub=1100 from SAT
+[MIP 18:51:27] OPTIMAL by MIP | obj=1100.000000 | solve=4.69s | total=4.74s
+[ORCH 18:51:27] current global_ub=1100 from MIP
+[ORCH 18:51:27] OPTIMAL found: 1100 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774529484.310948
+global_lb: None
+global_ub: 1100
+instance: instances/instance2.txt
+mip_objbound: 1100.0
+mip_objval: 1100.0
+mip_solve_time_sec: 4.687851731000137
+mip_status: RUNNING
+mip_status_code: 2
+mip_total_time_sec: 4.7368409339997015
+optimal_cost: 1100
+sat_last_improvement_from: 1150
+sat_solver_time_sec: 0.03970122400000031
+sat_status: RUNNING
+sat_total_time_sec: 3.736878939000235
+status: OPTIMAL
+total_runtime_sec: 5.0688149940001495
+updated_at: 1774525887.907008
+================================================================================
+
+=== run2 instance3 ===
+[ORCH 18:51:27] starting workers
+[ORCH 18:51:27] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance3.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:51:27] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance3.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:51:28] start optimize | threads=1 | time_limit=3599.94s
+[ORCH 18:51:32] current global_ub=1350 from MIP
+[ORCH 18:51:33] current global_ub=1350 from MIP
+[ORCH 18:51:34] current global_ub=1200 from MIP
+[ORCH 18:51:34] current global_ub=1200 from MIP
+[SAT 18:51:34] built F1 | vars=29955 | clauses=69179
+[SAT 18:51:34] certifying current UB=1200 by solving cost <= 1199
+[ORCH 18:51:35] current global_ub=1200 from MIP
+[ORCH 18:51:35] current global_ub=1200 from MIP
+[ORCH 18:51:36] current global_ub=1200 from MIP
+[ORCH 18:51:36] current global_ub=1200 from MIP
+[ORCH 18:51:37] current global_ub=1200 from MIP
+[MIP 18:51:37] OPTIMAL by MIP | obj=1200.000000 | solve=8.93s | total=9.00s
+[ORCH 18:51:37] current global_ub=1200 from MIP
+[ORCH 18:51:37] OPTIMAL found: 1200 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774529487.95905
+global_lb: None
+global_ub: 1200
+instance: instances/instance3.txt
+mip_objbound: 1200.0
+mip_objval: 1200.0
+mip_solve_time_sec: 8.925978864000172
+mip_status: RUNNING
+mip_status_code: 2
+mip_total_time_sec: 9.000109841000267
+optimal_cost: 1200
+sat_status: None
+status: OPTIMAL
+total_runtime_sec: 9.561196380000183
+updated_at: 1774525897.5187802
+================================================================================
+
+=== run2 instance4 ===
+[ORCH 18:51:37] starting workers
+[ORCH 18:51:37] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance4.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:51:37] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance4.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:51:37] start optimize | threads=1 | time_limit=3599.94s
+[SAT 18:51:37] built F1 | vars=21881 | clauses=52573
+[SAT 18:51:38] certifying current UB=2600 by solving cost <= 2599
+[SAT 18:51:38] SAT improved UB: 2600 -> 1250
+[SAT 18:51:38] certifying current UB=1250 by solving cost <= 1249
+[SAT 18:51:38] SAT improved UB: 1250 -> 1200
+[SAT 18:51:38] certifying current UB=1200 by solving cost <= 1199
+[SAT 18:51:38] SAT improved UB: 1200 -> 1150
+[SAT 18:51:38] certifying current UB=1150 by solving cost <= 1149
+[ORCH 18:51:38] current global_ub=1150 from SAT
+[ORCH 18:51:39] current global_ub=1150 from SAT
+[ORCH 18:51:39] current global_ub=1150 from SAT
+[MIP 18:51:39] OPTIMAL by MIP | obj=1150.000000 | solve=2.26s | total=2.34s
+[ORCH 18:51:40] current global_ub=1150 from MIP
+[ORCH 18:51:40] OPTIMAL found: 1150 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774529497.5767365
+global_lb: None
+global_ub: 1150
+instance: instances/instance4.txt
+mip_objbound: 1150.0
+mip_objval: 1150.0
+mip_solve_time_sec: 2.258761444999891
+mip_status: RUNNING
+mip_status_code: 2
+mip_total_time_sec: 2.336255123000228
+optimal_cost: 1150
+sat_last_improvement_from: 1200
+sat_solver_time_sec: 0.03930281400000002
+sat_status: RUNNING
+sat_total_time_sec: 0.8140462709998246
+status: OPTIMAL
+total_runtime_sec: 2.606319165000059
+updated_at: 1774525900.18153
+================================================================================
+
+=== run2 instance5 ===
+[ORCH 18:51:40] starting workers
+[ORCH 18:51:40] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance5.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:51:40] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance5.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:51:40] start optimize | threads=1 | time_limit=3599.93s
+[SAT 18:51:40] built F1 | vars=5714 | clauses=13116
+[SAT 18:51:40] certifying current UB=1000 by solving cost <= 999
+[SAT 18:51:40] SAT improved UB: 1000 -> 750
+[SAT 18:51:40] certifying current UB=750 by solving cost <= 749
+[SAT 18:51:40] SAT improved UB: 750 -> 700
+[SAT 18:51:40] certifying current UB=700 by solving cost <= 699
+[SAT 18:51:40] OPTIMAL by SAT certificate | no solution with cost <= 699
+[MIP 18:51:40] INTERRUPTED | solve=0.38s | total=0.40s
+[ORCH 18:51:40] current global_ub=700 from SAT
+[ORCH 18:51:40] OPTIMAL found: 700 by SAT
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: SAT
+deadline_ts: 1774529500.2353659
+global_lb: None
+global_ub: 700
+instance: instances/instance5.txt
+mip_objbound: 500.0
+mip_objval: 700.0
+mip_solve_time_sec: 0.37667550200012556
+mip_status: INTERRUPTED
+mip_status_code: 11
+mip_total_time_sec: 0.3989495400001033
+optimal_cost: 700
+sat_certified_against: 699
+sat_last_improvement_from: 750
+sat_solver_time_sec: 0.18010418999999997
+sat_status: OPTIMAL
+sat_total_time_sec: 0.32671049600003244
+status: OPTIMAL
+total_runtime_sec: 0.5132396680000966
+updated_at: 1774525900.7472649
+================================================================================
+
+=== run2 instance6 ===
+[ORCH 18:51:40] starting workers
+[ORCH 18:51:40] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance6.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:51:40] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance6.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:51:40] start optimize | threads=1 | time_limit=3599.93s
+[SAT 18:51:41] built F1 | vars=6527 | clauses=14941
+[SAT 18:51:41] certifying current UB=1200 by solving cost <= 1199
+[SAT 18:51:41] SAT improved UB: 1200 -> 650
+[SAT 18:51:41] certifying current UB=650 by solving cost <= 649
+[SAT 18:51:41] OPTIMAL by SAT certificate | no solution with cost <= 649
+[MIP 18:51:41] INTERRUPTED | solve=0.28s | total=0.31s
+[ORCH 18:51:41] current global_ub=650 from SAT
+[ORCH 18:51:41] OPTIMAL found: 650 by SAT
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: SAT
+deadline_ts: 1774529500.8067746
+global_lb: None
+global_ub: 650
+instance: instances/instance6.txt
+mip_objbound: 250.0
+mip_objval: 800.0
+mip_solve_time_sec: 0.2803118669999094
+mip_status: INTERRUPTED
+mip_status_code: 11
+mip_total_time_sec: 0.3095224449998568
+optimal_cost: 650
+sat_certified_against: 649
+sat_last_improvement_from: 1200
+sat_solver_time_sec: 0.13088371499999998
+sat_status: OPTIMAL
+sat_total_time_sec: 0.2432199770000807
+status: OPTIMAL
+total_runtime_sec: 0.5175242909999724
+updated_at: 1774525901.3224747
+================================================================================
+
+=== run2 instance7 ===
+[ORCH 18:51:41] starting workers
+[ORCH 18:51:41] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance7.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:51:41] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance7.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:51:41] start optimize | threads=1 | time_limit=3599.94s
+[ORCH 18:51:41] current global_ub=1000 from MIP
+[ORCH 18:51:42] current global_ub=950 from MIP
+[ORCH 18:51:42] current global_ub=950 from MIP
+[SAT 18:51:43] built F1 | vars=12719 | clauses=29208
+[SAT 18:51:43] certifying current UB=900 by solving cost <= 899
+[SAT 18:51:43] SAT improved UB: 900 -> 850
+[SAT 18:51:43] certifying current UB=850 by solving cost <= 849
+[MIP 18:51:43] OPTIMAL by MIP | obj=850.000000 | solve=1.83s | total=1.87s
+[ORCH 18:51:43] current global_ub=850 from MIP
+[ORCH 18:51:43] OPTIMAL found: 850 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774529501.3800008
+global_lb: None
+global_ub: 850
+instance: instances/instance7.txt
+mip_objbound: 850.0
+mip_objval: 850.0
+mip_solve_time_sec: 1.8341256389999216
+mip_status: RUNNING
+mip_status_code: 2
+mip_total_time_sec: 1.8676039229999333
+optimal_cost: 850
+sat_last_improvement_from: 900
+sat_solver_time_sec: 0.010483028999999977
+sat_status: RUNNING
+sat_total_time_sec: 1.781206875999942
+status: OPTIMAL
+total_runtime_sec: 2.0360785330003637
+updated_at: 1774525903.4129307
+================================================================================
+
+=== run2 instance8 ===
+[ORCH 18:51:43] starting workers
+[ORCH 18:51:43] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance8.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:51:43] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance8.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:51:43] start optimize | threads=1 | time_limit=3599.94s
+[ORCH 18:51:44] current global_ub=1000 from MIP
+[ORCH 18:51:44] current global_ub=950 from MIP
+[ORCH 18:51:45] current global_ub=950 from MIP
+[ORCH 18:51:46] current global_ub=950 from MIP
+[ORCH 18:51:46] current global_ub=950 from MIP
+[ORCH 18:51:47] current global_ub=950 from MIP
+[ORCH 18:51:47] current global_ub=900 from MIP
+[SAT 18:51:47] built F1 | vars=24036 | clauses=54607
+[SAT 18:51:47] certifying current UB=900 by solving cost <= 899
+[ORCH 18:51:48] current global_ub=900 from MIP
+[ORCH 18:51:48] current global_ub=900 from MIP
+[ORCH 18:51:49] current global_ub=900 from MIP
+[MIP 18:51:49] OPTIMAL by MIP | obj=900.000000 | solve=5.64s | total=5.72s
+[ORCH 18:51:49] current global_ub=900 from MIP
+[ORCH 18:51:49] OPTIMAL found: 900 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774529503.4760864
+global_lb: None
+global_ub: 900
+instance: instances/instance8.txt
+mip_objbound: 900.0
+mip_objval: 900.0
+mip_solve_time_sec: 5.636905252999895
+mip_status: RUNNING
+mip_status_code: 2
+mip_total_time_sec: 5.716904187000182
+optimal_cost: 900
+sat_status: None
+status: OPTIMAL
+total_runtime_sec: 6.093146271000023
+updated_at: 1774525909.5676162
+================================================================================
+
+=== run2 instance9 ===
+[ORCH 18:51:49] starting workers
+[ORCH 18:51:49] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance9.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:51:49] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance9.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:51:49] start optimize | threads=1 | time_limit=3599.93s
+[SAT 18:51:49] built F1 | vars=9791 | clauses=23005
+[ORCH 18:51:50] current global_ub=1100 from MIP
+[SAT 18:51:50] certifying current UB=1100 by solving cost <= 1099
+[SAT 18:51:50] SAT improved UB: 1100 -> 1050
+[SAT 18:51:50] certifying current UB=1050 by solving cost <= 1049
+[SAT 18:51:50] SAT improved UB: 1050 -> 1000
+[SAT 18:51:50] certifying current UB=1000 by solving cost <= 999
+[MIP 18:51:50] OPTIMAL by MIP | obj=1000.000000 | solve=0.93s | total=0.98s
+[ORCH 18:51:50] current global_ub=1000 from MIP
+[ORCH 18:51:50] OPTIMAL found: 1000 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774529509.6200078
+global_lb: None
+global_ub: 1000
+instance: instances/instance9.txt
+mip_objbound: 1000.0
+mip_objval: 1000.0
+mip_solve_time_sec: 0.9327422769997611
+mip_status: RUNNING
+mip_status_code: 2
+mip_total_time_sec: 0.978570308000144
+optimal_cost: 1000
+sat_last_improvement_from: 1050
+sat_solver_time_sec: 0.011946895000000013
+sat_status: RUNNING
+sat_total_time_sec: 0.6049495990000651
+status: OPTIMAL
+total_runtime_sec: 1.0563535030000821
+updated_at: 1774525910.6748667
+================================================================================
+
+=== run2 instance10 ===
+[ORCH 18:51:50] starting workers
+[ORCH 18:51:50] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance10.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:51:50] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance10.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:51:50] start optimize | threads=1 | time_limit=3599.94s
+[ORCH 18:52:02] current global_ub=2200 from MIP
+[ORCH 18:52:02] current global_ub=2200 from MIP
+[ORCH 18:52:03] current global_ub=1850 from MIP
+[ORCH 18:52:03] current global_ub=1650 from MIP
+[ORCH 18:52:04] current global_ub=1650 from MIP
+[ORCH 18:52:04] current global_ub=1650 from MIP
+[ORCH 18:52:05] current global_ub=1650 from MIP
+[ORCH 18:52:05] current global_ub=1650 from MIP
+[ORCH 18:52:06] current global_ub=1650 from MIP
+[ORCH 18:52:06] current global_ub=1650 from MIP
+[ORCH 18:52:07] current global_ub=1650 from MIP
+[ORCH 18:52:07] current global_ub=1650 from MIP
+[ORCH 18:52:08] current global_ub=1650 from MIP
+[ORCH 18:52:08] current global_ub=1650 from MIP
+[ORCH 18:52:09] current global_ub=1650 from MIP
+[ORCH 18:52:09] current global_ub=1650 from MIP
+[ORCH 18:52:10] current global_ub=1650 from MIP
+[ORCH 18:52:10] current global_ub=1650 from MIP
+[ORCH 18:52:11] current global_ub=1650 from MIP
+[MIP 18:52:11] OPTIMAL by MIP | obj=1650.000000 | solve=22.10s | total=22.21s
+[ORCH 18:52:11] current global_ub=1650 from MIP
+[ORCH 18:52:11] OPTIMAL found: 1650 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774529510.7296586
+global_lb: None
+global_ub: 1650
+instance: instances/instance10.txt
+mip_objbound: 1650.0
+mip_objval: 1650.0
+mip_solve_time_sec: 22.09905741600005
+mip_status: RUNNING
+mip_status_code: 2
+mip_total_time_sec: 22.208580501000142
+optimal_cost: 1650
+sat_status: None
+status: OPTIMAL
+total_runtime_sec: 22.426286235000134
+updated_at: 1774525931.725781
+================================================================================
+
+=== run2 instance11 ===
+[ORCH 18:52:11] starting workers
+[ORCH 18:52:11] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance11.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:52:11] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance11.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:52:12] start optimize | threads=1 | time_limit=3599.93s
+[SAT 18:52:20] built F1 | vars=68113 | clauses=171765
+[ORCH 18:52:58] current global_ub=2700 from MIP
+[SAT 18:52:58] certifying current UB=2700 by solving cost <= 2699
+[SAT 18:52:58] SAT improved UB: 2700 -> 2550
+[SAT 18:52:58] certifying current UB=2550 by solving cost <= 2549
+[SAT 18:52:58] SAT improved UB: 2550 -> 2400
+[SAT 18:52:58] certifying current UB=2400 by solving cost <= 2399
+[SAT 18:52:59] SAT improved UB: 2400 -> 2350
+[SAT 18:52:59] certifying current UB=2350 by solving cost <= 2349
+[ORCH 18:52:59] current global_ub=2350 from SAT
+[SAT 18:52:59] SAT improved UB: 2350 -> 2300
+[SAT 18:52:59] certifying current UB=2300 by solving cost <= 2299
+[ORCH 18:52:59] current global_ub=2300 from SAT
+[ORCH 18:53:00] current global_ub=2300 from SAT
+[ORCH 18:53:00] current global_ub=2300 from SAT
+[ORCH 18:53:01] current global_ub=2300 from SAT
+[ORCH 18:53:01] current global_ub=2300 from SAT
+[ORCH 18:53:00] current global_ub=2300 from SAT
+[ORCH 18:53:01] current global_ub=2300 from SAT
+[ORCH 18:53:01] current global_ub=2300 from SAT
+[ORCH 18:53:02] current global_ub=2300 from SAT
+[ORCH 18:53:02] current global_ub=2300 from SAT
+[ORCH 18:53:03] current global_ub=2300 from SAT
+[SAT 18:53:03] SAT improved UB: 2300 -> 2250
+[SAT 18:53:03] certifying current UB=2250 by solving cost <= 2249
+[ORCH 18:53:03] current global_ub=2250 from SAT
+[ORCH 18:53:04] current global_ub=2250 from SAT
+[ORCH 18:53:04] current global_ub=2250 from SAT
+[ORCH 18:53:05] current global_ub=2250 from SAT
+[ORCH 18:53:05] current global_ub=2250 from SAT
+[ORCH 18:53:06] current global_ub=2250 from SAT
+[ORCH 18:53:06] current global_ub=2250 from SAT
+[ORCH 18:53:07] current global_ub=2250 from SAT
+[ORCH 18:53:07] current global_ub=2250 from SAT
+[ORCH 18:53:08] current global_ub=2250 from SAT
+[ORCH 18:53:08] current global_ub=2250 from SAT
+[ORCH 18:53:09] current global_ub=2250 from SAT
+[ORCH 18:53:09] current global_ub=2250 from SAT
+[ORCH 18:53:10] current global_ub=2250 from SAT
+[ORCH 18:53:10] current global_ub=2250 from SAT
+[ORCH 18:53:11] current global_ub=2250 from SAT
+[ORCH 18:53:11] current global_ub=2250 from SAT
+[ORCH 18:53:12] current global_ub=2250 from SAT
+[ORCH 18:53:12] current global_ub=2250 from SAT
+[ORCH 18:53:13] current global_ub=2250 from SAT
+[ORCH 18:53:14] current global_ub=2250 from SAT
+[ORCH 18:53:14] current global_ub=2250 from SAT
+[ORCH 18:53:15] current global_ub=2250 from SAT
+[ORCH 18:53:15] current global_ub=2250 from SAT
+[ORCH 18:53:16] current global_ub=2250 from SAT
+[ORCH 18:53:16] current global_ub=2250 from SAT
+[ORCH 18:53:17] current global_ub=2250 from SAT
+[ORCH 18:53:17] current global_ub=2250 from SAT
+[ORCH 18:53:18] current global_ub=2250 from SAT
+[ORCH 18:53:18] current global_ub=2250 from SAT
+[ORCH 18:53:19] current global_ub=2250 from SAT
+[ORCH 18:53:19] current global_ub=2250 from SAT
+[ORCH 18:53:20] current global_ub=2250 from SAT
+[ORCH 18:53:20] current global_ub=2250 from SAT
+[ORCH 18:53:21] current global_ub=2250 from SAT
+[ORCH 18:53:21] current global_ub=2250 from SAT
+[ORCH 18:53:22] current global_ub=2250 from SAT
+[ORCH 18:53:22] current global_ub=2250 from SAT
+[ORCH 18:53:23] current global_ub=2250 from SAT
+[ORCH 18:53:23] current global_ub=2250 from SAT
+[ORCH 18:53:24] current global_ub=2250 from SAT
+[ORCH 18:53:24] current global_ub=2250 from SAT
+[ORCH 18:53:25] current global_ub=2250 from SAT
+[ORCH 18:53:25] current global_ub=2250 from SAT
+[ORCH 18:53:26] current global_ub=2250 from SAT
+[ORCH 18:53:26] current global_ub=2250 from SAT
+[ORCH 18:53:27] current global_ub=2250 from SAT
+[ORCH 18:53:27] current global_ub=2250 from SAT
+[ORCH 18:53:28] current global_ub=2250 from SAT
+[ORCH 18:53:28] current global_ub=2250 from SAT
+[ORCH 18:53:29] current global_ub=2250 from SAT
+[ORCH 18:53:29] current global_ub=2250 from SAT
+[ORCH 18:53:30] current global_ub=2250 from SAT
+[ORCH 18:53:30] current global_ub=2250 from SAT
+[ORCH 18:53:31] current global_ub=2250 from SAT
+[ORCH 18:53:31] current global_ub=2250 from SAT
+[ORCH 18:53:32] current global_ub=2250 from SAT
+[ORCH 18:53:32] current global_ub=2250 from SAT
+[ORCH 18:53:33] current global_ub=2250 from SAT
+[ORCH 18:53:32] current global_ub=2250 from SAT
+[ORCH 18:53:32] current global_ub=2250 from SAT
+[ORCH 18:53:33] current global_ub=2250 from SAT
+[ORCH 18:53:33] current global_ub=2250 from SAT
+[ORCH 18:53:34] current global_ub=2250 from SAT
+[ORCH 18:53:34] current global_ub=2250 from SAT
+[ORCH 18:53:35] current global_ub=2250 from SAT
+[ORCH 18:53:35] current global_ub=2250 from SAT
+[ORCH 18:53:36] current global_ub=2250 from SAT
+[ORCH 18:53:36] current global_ub=2250 from SAT
+[ORCH 18:53:37] current global_ub=2250 from SAT
+[ORCH 18:53:37] current global_ub=2250 from SAT
+[ORCH 18:53:38] current global_ub=2250 from SAT
+[ORCH 18:53:38] current global_ub=2250 from SAT
+[ORCH 18:53:39] current global_ub=2250 from SAT
+[ORCH 18:53:39] current global_ub=2250 from SAT
+[ORCH 18:53:40] current global_ub=2250 from SAT
+[ORCH 18:53:40] current global_ub=2250 from SAT
+[ORCH 18:53:41] current global_ub=2250 from SAT
+[ORCH 18:53:41] current global_ub=2250 from SAT
+[ORCH 18:53:42] current global_ub=2250 from SAT
+[ORCH 18:53:42] current global_ub=2250 from SAT
+[ORCH 18:53:43] current global_ub=2250 from SAT
+[ORCH 18:53:43] current global_ub=2250 from SAT
+[ORCH 18:53:44] current global_ub=2250 from SAT
+[ORCH 18:53:44] current global_ub=2250 from SAT
+[ORCH 18:53:45] current global_ub=2250 from SAT
+[ORCH 18:53:45] current global_ub=2250 from SAT
+[ORCH 18:53:46] current global_ub=2250 from SAT
+[ORCH 18:53:46] current global_ub=2250 from SAT
+[ORCH 18:53:47] current global_ub=2250 from SAT
+[ORCH 18:53:47] current global_ub=2250 from SAT
+[ORCH 18:53:48] current global_ub=2250 from SAT
+[ORCH 18:53:49] current global_ub=2250 from SAT
+[ORCH 18:53:49] current global_ub=2250 from SAT
+[ORCH 18:53:50] current global_ub=2250 from SAT
+[ORCH 18:53:50] current global_ub=2250 from SAT
+[ORCH 18:53:51] current global_ub=2250 from SAT
+[ORCH 18:53:51] current global_ub=2250 from SAT
+[ORCH 18:53:52] current global_ub=2250 from SAT
+[ORCH 18:53:52] current global_ub=2250 from SAT
+[ORCH 18:53:53] current global_ub=2250 from SAT
+[ORCH 18:53:53] current global_ub=2250 from SAT
+[ORCH 18:53:54] current global_ub=2250 from SAT
+[ORCH 18:53:54] current global_ub=2250 from SAT
+[ORCH 18:53:55] current global_ub=2250 from SAT
+[ORCH 18:53:55] current global_ub=2250 from SAT
+[ORCH 18:53:56] current global_ub=2250 from SAT
+[ORCH 18:53:56] current global_ub=2250 from SAT
+[ORCH 18:53:57] current global_ub=2250 from SAT
+[ORCH 18:53:57] current global_ub=2250 from SAT
+[ORCH 18:53:58] current global_ub=2250 from SAT
+[ORCH 18:53:58] current global_ub=2250 from SAT
+[ORCH 18:53:59] current global_ub=2250 from SAT
+[ORCH 18:53:59] current global_ub=2250 from SAT
+[ORCH 18:54:00] current global_ub=2250 from SAT
+[ORCH 18:54:00] current global_ub=2250 from SAT
+[ORCH 18:54:01] current global_ub=2250 from SAT
+[ORCH 18:54:01] current global_ub=2250 from SAT
+[ORCH 18:54:02] current global_ub=2250 from SAT
+[ORCH 18:54:02] current global_ub=2250 from SAT
+[ORCH 18:54:03] current global_ub=2250 from SAT
+[ORCH 18:54:03] current global_ub=2250 from SAT
+[ORCH 18:54:02] current global_ub=2250 from SAT
+[ORCH 18:54:03] current global_ub=2250 from SAT
+[ORCH 18:54:03] current global_ub=2250 from SAT
+[ORCH 18:54:04] current global_ub=2250 from SAT
+[ORCH 18:54:04] current global_ub=2250 from SAT
+[ORCH 18:54:05] current global_ub=2250 from SAT
+[ORCH 18:54:06] current global_ub=2250 from SAT
+[ORCH 18:54:06] current global_ub=2250 from SAT
+[ORCH 18:54:07] current global_ub=2250 from SAT
+[ORCH 18:54:07] current global_ub=2250 from SAT
+[ORCH 18:54:08] current global_ub=2250 from SAT
+[ORCH 18:54:08] current global_ub=2250 from SAT
+[ORCH 18:54:09] current global_ub=2250 from SAT
+[ORCH 18:54:09] current global_ub=2250 from SAT
+[ORCH 18:54:10] current global_ub=2250 from SAT
+[ORCH 18:54:10] current global_ub=2250 from SAT
+[ORCH 18:54:11] current global_ub=2250 from SAT
+[ORCH 18:54:11] current global_ub=2250 from SAT
+[ORCH 18:54:12] current global_ub=2250 from SAT
+[ORCH 18:54:12] current global_ub=2250 from SAT
+[ORCH 18:54:13] current global_ub=2250 from SAT
+[ORCH 18:54:13] current global_ub=2250 from SAT
+[ORCH 18:54:14] current global_ub=2250 from SAT
+[ORCH 18:54:14] current global_ub=2250 from SAT
+[ORCH 18:54:15] current global_ub=2250 from SAT
+[ORCH 18:54:15] current global_ub=2250 from SAT
+[ORCH 18:54:16] current global_ub=2250 from SAT
+[ORCH 18:54:16] current global_ub=2250 from SAT
+[ORCH 18:54:17] current global_ub=2250 from SAT
+[ORCH 18:54:17] current global_ub=2250 from SAT
+[ORCH 18:54:18] current global_ub=2250 from SAT
+[ORCH 18:54:18] current global_ub=2250 from SAT
+[ORCH 18:54:19] current global_ub=2250 from SAT
+[ORCH 18:54:19] current global_ub=2250 from SAT
+[ORCH 18:54:20] current global_ub=2250 from SAT
+[ORCH 18:54:20] current global_ub=2250 from SAT
+[ORCH 18:54:21] current global_ub=2250 from SAT
+[ORCH 18:54:21] current global_ub=2250 from SAT
+[ORCH 18:54:22] current global_ub=2250 from SAT
+[ORCH 18:54:22] current global_ub=2250 from SAT
+[ORCH 18:54:23] current global_ub=2250 from SAT
+[ORCH 18:54:23] current global_ub=2250 from SAT
+[ORCH 18:54:24] current global_ub=2250 from SAT
+[ORCH 18:54:24] current global_ub=2250 from SAT
+[ORCH 18:54:25] current global_ub=2250 from SAT
+[ORCH 18:54:25] current global_ub=2250 from SAT
+[ORCH 18:54:26] current global_ub=2250 from SAT
+[ORCH 18:54:26] current global_ub=2250 from SAT
+[ORCH 18:54:27] current global_ub=2250 from SAT
+[ORCH 18:54:27] current global_ub=2250 from SAT
+[ORCH 18:54:28] current global_ub=2250 from SAT
+[ORCH 18:54:28] current global_ub=2250 from SAT
+[ORCH 18:54:29] current global_ub=2250 from SAT
+[ORCH 18:54:29] current global_ub=2250 from SAT
+[ORCH 18:54:30] current global_ub=2250 from SAT
+[ORCH 18:54:30] current global_ub=2250 from SAT
+[ORCH 18:54:31] current global_ub=2250 from SAT
+[ORCH 18:54:31] current global_ub=2250 from SAT
+[ORCH 18:54:32] current global_ub=2250 from SAT
+[ORCH 18:54:32] current global_ub=2250 from SAT
+[ORCH 18:54:33] current global_ub=2250 from SAT
+[ORCH 18:54:33] current global_ub=2250 from SAT
+[ORCH 18:54:34] current global_ub=2250 from SAT
+[ORCH 18:54:34] current global_ub=2250 from SAT
+[ORCH 18:54:35] current global_ub=2250 from SAT
+[ORCH 18:54:34] current global_ub=2250 from SAT
+[ORCH 18:54:34] current global_ub=2250 from SAT
+[ORCH 18:54:35] current global_ub=2250 from SAT
+[ORCH 18:54:35] current global_ub=2250 from SAT
+[ORCH 18:54:36] current global_ub=2250 from SAT
+[ORCH 18:54:36] current global_ub=2250 from SAT
+[ORCH 18:54:37] current global_ub=2250 from SAT
+[ORCH 18:54:37] current global_ub=2250 from SAT
+[ORCH 18:54:38] current global_ub=2250 from SAT
+[ORCH 18:54:38] current global_ub=2250 from SAT
+[ORCH 18:54:39] current global_ub=2250 from SAT
+[ORCH 18:54:39] current global_ub=2250 from SAT
+[ORCH 18:54:40] current global_ub=2250 from SAT
+[ORCH 18:54:40] current global_ub=2250 from SAT
+[ORCH 18:54:41] current global_ub=2250 from SAT
+[ORCH 18:54:41] current global_ub=2250 from SAT
+[ORCH 18:54:42] current global_ub=2250 from SAT
+[ORCH 18:54:42] current global_ub=2250 from SAT
+[ORCH 18:54:43] current global_ub=2250 from SAT
+[ORCH 18:54:43] current global_ub=2250 from SAT
+[ORCH 18:54:44] current global_ub=2250 from SAT
+[ORCH 18:54:44] current global_ub=2250 from SAT
+[ORCH 18:54:45] current global_ub=2250 from SAT
+[ORCH 18:54:45] current global_ub=2250 from SAT
+[ORCH 18:54:46] current global_ub=2250 from SAT
+[ORCH 18:54:46] current global_ub=2250 from SAT
+[ORCH 18:54:47] current global_ub=2250 from SAT
+[ORCH 18:54:47] current global_ub=2250 from SAT
+[ORCH 18:54:48] current global_ub=2250 from SAT
+[ORCH 18:54:48] current global_ub=2250 from SAT
+[ORCH 18:54:49] current global_ub=2250 from SAT
+[ORCH 18:54:49] current global_ub=2250 from SAT
+[ORCH 18:54:50] current global_ub=2250 from SAT
+[ORCH 18:54:50] current global_ub=2250 from SAT
+[ORCH 18:54:51] current global_ub=2250 from SAT
+[ORCH 18:54:51] current global_ub=2250 from SAT
+[ORCH 18:54:52] current global_ub=2250 from SAT
+[ORCH 18:54:52] current global_ub=2250 from SAT
+[ORCH 18:54:53] current global_ub=2250 from SAT
+[ORCH 18:54:54] current global_ub=2250 from SAT
+[ORCH 18:54:54] current global_ub=2250 from SAT
+[ORCH 18:54:55] current global_ub=2250 from SAT
+[ORCH 18:54:55] current global_ub=2250 from SAT
+[ORCH 18:54:56] current global_ub=2250 from SAT
+[ORCH 18:54:56] current global_ub=2250 from SAT
+[ORCH 18:54:57] current global_ub=2250 from SAT
+[ORCH 18:54:57] current global_ub=2250 from SAT
+[ORCH 18:54:58] current global_ub=2250 from SAT
+[ORCH 18:54:58] current global_ub=2250 from SAT
+[ORCH 18:54:59] current global_ub=2250 from SAT
+[ORCH 18:54:59] current global_ub=2250 from SAT
+[ORCH 18:55:00] current global_ub=2250 from SAT
+[ORCH 18:55:00] current global_ub=2250 from SAT
+[ORCH 18:55:01] current global_ub=2250 from SAT
+[ORCH 18:55:01] current global_ub=2250 from SAT
+[ORCH 18:55:02] current global_ub=2250 from SAT
+[ORCH 18:55:02] current global_ub=2250 from SAT
+[ORCH 18:55:03] current global_ub=2250 from SAT
+[ORCH 18:55:03] current global_ub=2250 from SAT
+[ORCH 18:55:04] current global_ub=2250 from SAT
+[ORCH 18:55:04] current global_ub=2250 from SAT
+[ORCH 18:55:05] current global_ub=2250 from SAT
+[ORCH 18:55:05] current global_ub=2250 from SAT
+[ORCH 18:55:06] current global_ub=2250 from SAT
+[ORCH 18:55:05] current global_ub=2250 from SAT
+[ORCH 18:55:05] current global_ub=2250 from SAT
+[ORCH 18:55:06] current global_ub=2250 from SAT
+[ORCH 18:55:06] current global_ub=2250 from SAT
+[ORCH 18:55:07] current global_ub=2250 from SAT
+[ORCH 18:55:07] current global_ub=2250 from SAT
+[ORCH 18:55:08] current global_ub=2250 from SAT
+[ORCH 18:55:08] current global_ub=2250 from SAT
+[ORCH 18:55:09] current global_ub=2250 from SAT
+[ORCH 18:55:09] current global_ub=2250 from SAT
+[ORCH 18:55:10] current global_ub=2250 from SAT
+[ORCH 18:55:10] current global_ub=2250 from SAT
+[ORCH 18:55:11] current global_ub=2250 from SAT
+[ORCH 18:55:11] current global_ub=2250 from SAT
+[ORCH 18:55:12] current global_ub=2250 from SAT
+[ORCH 18:55:12] current global_ub=2250 from SAT
+[ORCH 18:55:13] current global_ub=2250 from SAT
+[ORCH 18:55:13] current global_ub=2250 from SAT
+[ORCH 18:55:14] current global_ub=2250 from SAT
+[ORCH 18:55:14] current global_ub=2250 from SAT
+[ORCH 18:55:15] current global_ub=2250 from SAT
+[ORCH 18:55:15] current global_ub=2250 from SAT
+[ORCH 18:55:16] current global_ub=2250 from SAT
+[ORCH 18:55:16] current global_ub=2250 from SAT
+[ORCH 18:55:17] current global_ub=2250 from SAT
+[MIP 18:55:17] OPTIMAL by MIP | obj=2250.000000 | solve=194.29s | total=194.52s
+[ORCH 18:55:17] current global_ub=2250 from MIP
+[ORCH 18:55:17] OPTIMAL found: 2250 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774529531.782394
+global_lb: None
+global_ub: 2250
+instance: instances/instance11.txt
+mip_objbound: 2250.0
+mip_objval: 2250.0
+mip_solve_time_sec: 194.2902289450003
+mip_status: RUNNING
+mip_status_code: 2
+mip_total_time_sec: 194.51826731799974
+optimal_cost: 2250
+sat_last_improvement_from: 2300
+sat_solver_time_sec: 5.463919589
+sat_status: RUNNING
+sat_total_time_sec: 54.31728594000015
+status: OPTIMAL
+total_runtime_sec: 194.762654053
+updated_at: 1774526117.89927
+================================================================================
+
+=== run2 instance12 ===
+[ORCH 18:55:17] starting workers
+[ORCH 18:55:17] MIP cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_mip_gurobi_worker.py --inst instances/instance12.txt --state-file logs/shared_state.json --threads 1 --quiet
+[ORCH 18:55:17] SAT cmd: /home/hungle/RCP_bench/.venv39/bin/python /home/hungle/RCP_bench/src/hybrid_sat_certifier_worker.py --inst instances/instance12.txt --state-file logs/shared_state.json --solver g42 --poll 0.5
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2666563
+Academic license 2666563 - for non-commercial use only - registered to 22___@vnu.edu.vn
+Set parameter Threads to value 1
+[MIP 18:55:18] start optimize | threads=1 | time_limit=3599.94s
+[ORCH 18:57:29] current global_ub=2700 from MIP
+[ORCH 18:57:30] current global_ub=2700 from MIP
+[ORCH 18:57:30] current global_ub=2700 from MIP
+[ORCH 18:57:31] current global_ub=2700 from MIP
+[ORCH 18:57:31] current global_ub=2700 from MIP
+[ORCH 18:57:32] current global_ub=2700 from MIP
+[ORCH 18:57:32] current global_ub=2700 from MIP
+[ORCH 18:57:33] current global_ub=2400 from MIP
+[ORCH 18:57:33] current global_ub=2400 from MIP
+[ORCH 18:57:34] current global_ub=2400 from MIP
+[ORCH 18:57:34] current global_ub=2400 from MIP
+[ORCH 18:57:35] current global_ub=2400 from MIP
+[ORCH 18:57:35] current global_ub=2400 from MIP
+[ORCH 18:57:36] current global_ub=2400 from MIP
+[ORCH 18:57:36] current global_ub=2400 from MIP
+[ORCH 18:57:37] current global_ub=2400 from MIP
+[ORCH 18:57:37] current global_ub=2400 from MIP
+[ORCH 18:57:38] current global_ub=2400 from MIP
+[ORCH 18:57:38] current global_ub=2400 from MIP
+[ORCH 18:57:39] current global_ub=2400 from MIP
+[ORCH 18:57:39] current global_ub=2400 from MIP
+[ORCH 18:57:40] current global_ub=2400 from MIP
+[ORCH 18:57:40] current global_ub=2400 from MIP
+[ORCH 18:57:41] current global_ub=2400 from MIP
+[ORCH 18:57:40] current global_ub=2400 from MIP
+[ORCH 18:57:41] current global_ub=2400 from MIP
+[ORCH 18:57:41] current global_ub=2400 from MIP
+[ORCH 18:57:42] current global_ub=2400 from MIP
+[ORCH 18:57:42] current global_ub=2400 from MIP
+[ORCH 18:57:43] current global_ub=2400 from MIP
+[ORCH 18:57:43] current global_ub=2400 from MIP
+[ORCH 18:57:44] current global_ub=2400 from MIP
+[ORCH 18:57:44] current global_ub=2400 from MIP
+[ORCH 18:57:45] current global_ub=2400 from MIP
+[ORCH 18:57:45] current global_ub=2400 from MIP
+[ORCH 18:57:46] current global_ub=2400 from MIP
+[ORCH 18:57:46] current global_ub=2400 from MIP
+[ORCH 18:57:47] current global_ub=2400 from MIP
+[ORCH 18:57:47] current global_ub=2400 from MIP
+[ORCH 18:57:48] current global_ub=2400 from MIP
+[ORCH 18:57:48] current global_ub=2400 from MIP
+[ORCH 18:57:49] current global_ub=2400 from MIP
+[ORCH 18:57:49] current global_ub=2400 from MIP
+[ORCH 18:57:50] current global_ub=2400 from MIP
+[ORCH 18:57:50] current global_ub=2400 from MIP
+[ORCH 18:57:51] current global_ub=2400 from MIP
+[ORCH 18:57:51] current global_ub=2400 from MIP
+[ORCH 18:57:52] current global_ub=2400 from MIP
+[ORCH 18:57:52] current global_ub=2400 from MIP
+[ORCH 18:57:53] current global_ub=2400 from MIP
+[ORCH 18:57:53] current global_ub=2400 from MIP
+[ORCH 18:57:54] current global_ub=2400 from MIP
+[ORCH 18:57:54] current global_ub=2400 from MIP
+[ORCH 18:57:55] current global_ub=2400 from MIP
+[ORCH 18:57:55] current global_ub=2400 from MIP
+[ORCH 18:57:56] current global_ub=2400 from MIP
+[ORCH 18:57:56] current global_ub=2400 from MIP
+[ORCH 18:57:57] current global_ub=2400 from MIP
+[ORCH 18:57:57] current global_ub=2400 from MIP
+[ORCH 18:57:58] current global_ub=2400 from MIP
+[ORCH 18:57:58] current global_ub=2400 from MIP
+[ORCH 18:57:59] current global_ub=2400 from MIP
+[ORCH 18:57:59] current global_ub=2400 from MIP
+[ORCH 18:58:00] current global_ub=2400 from MIP
+[ORCH 18:58:00] current global_ub=2400 from MIP
+[ORCH 18:58:01] current global_ub=2400 from MIP
+[ORCH 18:58:01] current global_ub=2400 from MIP
+[ORCH 18:58:02] current global_ub=2400 from MIP
+[ORCH 18:58:02] current global_ub=2400 from MIP
+[ORCH 18:58:03] current global_ub=2400 from MIP
+[ORCH 18:58:03] current global_ub=2400 from MIP
+[ORCH 18:58:04] current global_ub=2400 from MIP
+[ORCH 18:58:04] current global_ub=2400 from MIP
+[ORCH 18:58:05] current global_ub=2400 from MIP
+[ORCH 18:58:05] current global_ub=2400 from MIP
+[ORCH 18:58:06] current global_ub=2400 from MIP
+[ORCH 18:58:06] current global_ub=2400 from MIP
+[ORCH 18:58:07] current global_ub=2400 from MIP
+[ORCH 18:58:07] current global_ub=2400 from MIP
+[ORCH 18:58:08] current global_ub=2400 from MIP
+[ORCH 18:58:08] current global_ub=2400 from MIP
+[ORCH 18:58:09] current global_ub=2400 from MIP
+[ORCH 18:58:09] current global_ub=2400 from MIP
+[ORCH 18:58:10] current global_ub=2400 from MIP
+[ORCH 18:58:10] current global_ub=2400 from MIP
+[ORCH 18:58:11] current global_ub=2400 from MIP
+[ORCH 18:58:11] current global_ub=2400 from MIP
+[ORCH 18:58:12] current global_ub=2400 from MIP
+[ORCH 18:58:11] current global_ub=2400 from MIP
+[ORCH 18:58:11] current global_ub=2400 from MIP
+[ORCH 18:58:12] current global_ub=2400 from MIP
+[ORCH 18:58:12] current global_ub=2400 from MIP
+[ORCH 18:58:13] current global_ub=2400 from MIP
+[ORCH 18:58:13] current global_ub=2400 from MIP
+[ORCH 18:58:14] current global_ub=2400 from MIP
+[ORCH 18:58:14] current global_ub=2400 from MIP
+[ORCH 18:58:15] current global_ub=2400 from MIP
+[ORCH 18:58:16] current global_ub=2400 from MIP
+[ORCH 18:58:16] current global_ub=2400 from MIP
+[ORCH 18:58:17] current global_ub=2400 from MIP
+[ORCH 18:58:17] current global_ub=2400 from MIP
+[ORCH 18:58:18] current global_ub=2400 from MIP
+[ORCH 18:58:18] current global_ub=2400 from MIP
+[ORCH 18:58:19] current global_ub=2400 from MIP
+[ORCH 18:58:19] current global_ub=2400 from MIP
+[ORCH 18:58:20] current global_ub=2400 from MIP
+[ORCH 18:58:20] current global_ub=2400 from MIP
+[ORCH 18:58:21] current global_ub=2400 from MIP
+[ORCH 18:58:21] current global_ub=2400 from MIP
+[ORCH 18:58:22] current global_ub=2400 from MIP
+[ORCH 18:58:22] current global_ub=2400 from MIP
+[ORCH 18:58:23] current global_ub=2400 from MIP
+[ORCH 18:58:23] current global_ub=2400 from MIP
+[ORCH 18:58:24] current global_ub=2400 from MIP
+[ORCH 18:58:24] current global_ub=2400 from MIP
+[ORCH 18:58:25] current global_ub=2400 from MIP
+[ORCH 18:58:25] current global_ub=2400 from MIP
+[ORCH 18:58:26] current global_ub=2400 from MIP
+[ORCH 18:58:26] current global_ub=2400 from MIP
+[ORCH 18:58:27] current global_ub=2400 from MIP
+[ORCH 18:58:28] current global_ub=2400 from MIP
+[ORCH 18:58:28] current global_ub=2400 from MIP
+[ORCH 18:58:29] current global_ub=2400 from MIP
+[ORCH 18:58:29] current global_ub=2400 from MIP
+[ORCH 18:58:30] current global_ub=2400 from MIP
+[ORCH 18:58:30] current global_ub=2400 from MIP
+[ORCH 18:58:31] current global_ub=2400 from MIP
+[ORCH 18:58:31] current global_ub=2400 from MIP
+[ORCH 18:58:32] current global_ub=2400 from MIP
+[ORCH 18:58:32] current global_ub=2400 from MIP
+[ORCH 18:58:33] current global_ub=2400 from MIP
+[ORCH 18:58:33] current global_ub=2400 from MIP
+[ORCH 18:58:34] current global_ub=2400 from MIP
+[ORCH 18:58:34] current global_ub=2400 from MIP
+[ORCH 18:58:35] current global_ub=2400 from MIP
+[ORCH 18:58:35] current global_ub=2400 from MIP
+[ORCH 18:58:36] current global_ub=2400 from MIP
+[ORCH 18:58:36] current global_ub=2400 from MIP
+[ORCH 18:58:37] current global_ub=2400 from MIP
+[ORCH 18:58:37] current global_ub=2400 from MIP
+[ORCH 18:58:38] current global_ub=2400 from MIP
+[ORCH 18:58:38] current global_ub=2400 from MIP
+[ORCH 18:58:39] current global_ub=2400 from MIP
+[ORCH 18:58:39] current global_ub=2400 from MIP
+[ORCH 18:58:40] current global_ub=2400 from MIP
+[ORCH 18:58:40] current global_ub=2400 from MIP
+[ORCH 18:58:41] current global_ub=2400 from MIP
+[ORCH 18:58:42] current global_ub=2400 from MIP
+[ORCH 18:58:42] current global_ub=2400 from MIP
+[ORCH 18:58:43] current global_ub=2400 from MIP
+[ORCH 18:58:42] current global_ub=2400 from MIP
+[ORCH 18:58:42] current global_ub=2400 from MIP
+[ORCH 18:58:43] current global_ub=2400 from MIP
+[ORCH 18:58:43] current global_ub=2400 from MIP
+[ORCH 18:58:44] current global_ub=2400 from MIP
+[ORCH 18:58:44] current global_ub=2400 from MIP
+[ORCH 18:58:45] current global_ub=2400 from MIP
+[ORCH 18:58:45] current global_ub=2400 from MIP
+[ORCH 18:58:46] current global_ub=2400 from MIP
+[ORCH 18:58:46] current global_ub=2400 from MIP
+[ORCH 18:58:47] current global_ub=2400 from MIP
+[ORCH 18:58:47] current global_ub=2400 from MIP
+[ORCH 18:58:48] current global_ub=2400 from MIP
+[ORCH 18:58:48] current global_ub=2400 from MIP
+[ORCH 18:58:49] current global_ub=2400 from MIP
+[ORCH 18:58:49] current global_ub=2400 from MIP
+[ORCH 18:58:50] current global_ub=2400 from MIP
+[ORCH 18:58:50] current global_ub=2400 from MIP
+[ORCH 18:58:51] current global_ub=2400 from MIP
+[ORCH 18:58:51] current global_ub=2400 from MIP
+[ORCH 18:58:52] current global_ub=2400 from MIP
+[ORCH 18:58:52] current global_ub=2400 from MIP
+[ORCH 18:58:53] current global_ub=2400 from MIP
+[ORCH 18:58:53] current global_ub=2400 from MIP
+[ORCH 18:58:54] current global_ub=2400 from MIP
+[ORCH 18:58:54] current global_ub=2400 from MIP
+[ORCH 18:58:55] current global_ub=2400 from MIP
+[ORCH 18:58:55] current global_ub=2400 from MIP
+[ORCH 18:58:56] current global_ub=2400 from MIP
+[ORCH 18:58:56] current global_ub=2400 from MIP
+[ORCH 18:58:57] current global_ub=2400 from MIP
+[ORCH 18:58:57] current global_ub=2400 from MIP
+[ORCH 18:58:58] current global_ub=2400 from MIP
+[ORCH 18:58:58] current global_ub=2400 from MIP
+[ORCH 18:58:59] current global_ub=2400 from MIP
+[ORCH 18:58:59] current global_ub=2400 from MIP
+[ORCH 18:59:00] current global_ub=2400 from MIP
+[ORCH 18:59:00] current global_ub=2400 from MIP
+[ORCH 18:59:01] current global_ub=2400 from MIP
+[ORCH 18:59:01] current global_ub=2400 from MIP
+[ORCH 18:59:02] current global_ub=2400 from MIP
+[ORCH 18:59:02] current global_ub=2400 from MIP
+[ORCH 18:59:03] current global_ub=2400 from MIP
+[ORCH 18:59:03] current global_ub=2400 from MIP
+[ORCH 18:59:04] current global_ub=2400 from MIP
+[ORCH 18:59:04] current global_ub=2400 from MIP
+[ORCH 18:59:05] current global_ub=2400 from MIP
+[ORCH 18:59:06] current global_ub=2400 from MIP
+[ORCH 18:59:06] current global_ub=2400 from MIP
+[ORCH 18:59:07] current global_ub=2400 from MIP
+[ORCH 18:59:07] current global_ub=2400 from MIP
+[ORCH 18:59:08] current global_ub=2400 from MIP
+[ORCH 18:59:08] current global_ub=2400 from MIP
+[ORCH 18:59:09] current global_ub=2400 from MIP
+[ORCH 18:59:09] current global_ub=2400 from MIP
+[ORCH 18:59:10] current global_ub=2400 from MIP
+[ORCH 18:59:10] current global_ub=2400 from MIP
+[ORCH 18:59:11] current global_ub=2400 from MIP
+[ORCH 18:59:11] current global_ub=2400 from MIP
+[ORCH 18:59:12] current global_ub=2400 from MIP
+[ORCH 18:59:12] current global_ub=2400 from MIP
+[ORCH 18:59:13] current global_ub=2400 from MIP
+[ORCH 18:59:13] current global_ub=2400 from MIP
+[ORCH 18:59:14] current global_ub=2400 from MIP
+[ORCH 18:59:13] current global_ub=2400 from MIP
+[ORCH 18:59:13] current global_ub=2400 from MIP
+[ORCH 18:59:14] current global_ub=2400 from MIP
+[ORCH 18:59:14] current global_ub=2400 from MIP
+[ORCH 18:59:15] current global_ub=2400 from MIP
+[ORCH 18:59:15] current global_ub=2400 from MIP
+[ORCH 18:59:16] current global_ub=2400 from MIP
+[ORCH 18:59:16] current global_ub=2400 from MIP
+[ORCH 18:59:17] current global_ub=2400 from MIP
+[ORCH 18:59:17] current global_ub=2400 from MIP
+[ORCH 18:59:18] current global_ub=2400 from MIP
+[ORCH 18:59:18] current global_ub=2400 from MIP
+[ORCH 18:59:19] current global_ub=2400 from MIP
+[ORCH 18:59:19] current global_ub=2400 from MIP
+[ORCH 18:59:20] current global_ub=2400 from MIP
+[ORCH 18:59:20] current global_ub=2400 from MIP
+[ORCH 18:59:21] current global_ub=2400 from MIP
+[ORCH 18:59:22] current global_ub=2400 from MIP
+[ORCH 18:59:22] current global_ub=2400 from MIP
+[ORCH 18:59:23] current global_ub=2400 from MIP
+[ORCH 18:59:23] current global_ub=2400 from MIP
+[ORCH 18:59:24] current global_ub=2400 from MIP
+[ORCH 18:59:24] current global_ub=2400 from MIP
+[ORCH 18:59:25] current global_ub=2400 from MIP
+[ORCH 18:59:25] current global_ub=2400 from MIP
+[ORCH 18:59:26] current global_ub=2400 from MIP
+[ORCH 18:59:26] current global_ub=2400 from MIP
+[ORCH 18:59:27] current global_ub=2400 from MIP
+[ORCH 18:59:27] current global_ub=2400 from MIP
+[ORCH 18:59:28] current global_ub=2400 from MIP
+[ORCH 18:59:28] current global_ub=2400 from MIP
+[ORCH 18:59:29] current global_ub=2400 from MIP
+[ORCH 18:59:29] current global_ub=2400 from MIP
+[ORCH 18:59:30] current global_ub=2400 from MIP
+[ORCH 18:59:30] current global_ub=2400 from MIP
+[ORCH 18:59:31] current global_ub=2400 from MIP
+[ORCH 18:59:31] current global_ub=2400 from MIP
+[ORCH 18:59:32] current global_ub=2400 from MIP
+[ORCH 18:59:32] current global_ub=2400 from MIP
+[ORCH 18:59:33] current global_ub=2400 from MIP
+[ORCH 18:59:33] current global_ub=2400 from MIP
+[ORCH 18:59:34] current global_ub=2400 from MIP
+[ORCH 18:59:34] current global_ub=2400 from MIP
+[ORCH 18:59:35] current global_ub=2400 from MIP
+[ORCH 18:59:35] current global_ub=2400 from MIP
+[ORCH 18:59:36] current global_ub=2400 from MIP
+[ORCH 18:59:36] current global_ub=2400 from MIP
+[ORCH 18:59:37] current global_ub=2400 from MIP
+[ORCH 18:59:37] current global_ub=2400 from MIP
+[ORCH 18:59:38] current global_ub=2400 from MIP
+[ORCH 18:59:38] current global_ub=2400 from MIP
+[ORCH 18:59:39] current global_ub=2400 from MIP
+[ORCH 18:59:39] current global_ub=2400 from MIP
+[ORCH 18:59:40] current global_ub=2400 from MIP
+[ORCH 18:59:40] current global_ub=2400 from MIP
+[ORCH 18:59:41] current global_ub=2400 from MIP
+[ORCH 18:59:41] current global_ub=2400 from MIP
+[ORCH 18:59:42] current global_ub=2400 from MIP
+[ORCH 18:59:42] current global_ub=2400 from MIP
+[ORCH 18:59:43] current global_ub=2400 from MIP
+[ORCH 18:59:43] current global_ub=2400 from MIP
+[ORCH 18:59:44] current global_ub=2400 from MIP
+[ORCH 18:59:45] current global_ub=2400 from MIP
+[ORCH 18:59:45] current global_ub=2400 from MIP
+[ORCH 18:59:44] current global_ub=2400 from MIP
+[ORCH 18:59:45] current global_ub=2400 from MIP
+[ORCH 18:59:45] current global_ub=2400 from MIP
+[ORCH 18:59:46] current global_ub=2400 from MIP
+[ORCH 18:59:46] current global_ub=2400 from MIP
+[ORCH 18:59:47] current global_ub=2400 from MIP
+[ORCH 18:59:47] current global_ub=2400 from MIP
+[ORCH 18:59:48] current global_ub=2400 from MIP
+[ORCH 18:59:48] current global_ub=2400 from MIP
+[ORCH 18:59:49] current global_ub=2400 from MIP
+[ORCH 18:59:49] current global_ub=2400 from MIP
+[ORCH 18:59:50] current global_ub=2400 from MIP
+[ORCH 18:59:50] current global_ub=2400 from MIP
+[ORCH 18:59:51] current global_ub=2400 from MIP
+[ORCH 18:59:51] current global_ub=2400 from MIP
+[ORCH 18:59:52] current global_ub=2400 from MIP
+[ORCH 18:59:52] current global_ub=2400 from MIP
+[ORCH 18:59:53] current global_ub=2400 from MIP
+[ORCH 18:59:53] current global_ub=2400 from MIP
+[ORCH 18:59:54] current global_ub=2400 from MIP
+[ORCH 18:59:54] current global_ub=2400 from MIP
+[ORCH 18:59:55] current global_ub=2400 from MIP
+[ORCH 18:59:55] current global_ub=2400 from MIP
+[ORCH 18:59:56] current global_ub=2400 from MIP
+[ORCH 18:59:56] current global_ub=2400 from MIP
+[ORCH 18:59:57] current global_ub=2400 from MIP
+[ORCH 18:59:57] current global_ub=2400 from MIP
+[ORCH 18:59:58] current global_ub=2400 from MIP
+[ORCH 18:59:58] current global_ub=2400 from MIP
+[ORCH 18:59:59] current global_ub=2400 from MIP
+[ORCH 18:59:59] current global_ub=2400 from MIP
+[ORCH 19:00:00] current global_ub=2400 from MIP
+[ORCH 19:00:00] current global_ub=2400 from MIP
+[ORCH 19:00:01] current global_ub=2400 from MIP
+[ORCH 19:00:01] current global_ub=2400 from MIP
+[ORCH 19:00:02] current global_ub=2400 from MIP
+[ORCH 19:00:02] current global_ub=2400 from MIP
+[ORCH 19:00:03] current global_ub=2400 from MIP
+[ORCH 19:00:03] current global_ub=2400 from MIP
+[ORCH 19:00:04] current global_ub=2400 from MIP
+[ORCH 19:00:04] current global_ub=2400 from MIP
+[ORCH 19:00:05] current global_ub=2400 from MIP
+[ORCH 19:00:05] current global_ub=2400 from MIP
+[ORCH 19:00:06] current global_ub=2400 from MIP
+[ORCH 19:00:06] current global_ub=2400 from MIP
+[ORCH 19:00:07] current global_ub=2400 from MIP
+[ORCH 19:00:07] current global_ub=2400 from MIP
+[ORCH 19:00:08] current global_ub=2400 from MIP
+[ORCH 19:00:08] current global_ub=2400 from MIP
+[ORCH 19:00:09] current global_ub=2400 from MIP
+[ORCH 19:00:10] current global_ub=2400 from MIP
+[ORCH 19:00:10] current global_ub=2400 from MIP
+[ORCH 19:00:11] current global_ub=2400 from MIP
+[ORCH 19:00:11] current global_ub=2400 from MIP
+[ORCH 19:00:12] current global_ub=2400 from MIP
+[ORCH 19:00:12] current global_ub=2400 from MIP
+[ORCH 19:00:13] current global_ub=2400 from MIP
+[ORCH 19:00:13] current global_ub=2400 from MIP
+[ORCH 19:00:14] current global_ub=2400 from MIP
+[ORCH 19:00:14] current global_ub=2400 from MIP
+[ORCH 19:00:15] current global_ub=2400 from MIP
+[ORCH 19:00:15] current global_ub=2400 from MIP
+[ORCH 19:00:16] current global_ub=2400 from MIP
+[ORCH 19:00:15] current global_ub=2400 from MIP
+[ORCH 19:00:15] current global_ub=2400 from MIP
+[ORCH 19:00:16] current global_ub=2400 from MIP
+[ORCH 19:00:16] current global_ub=2400 from MIP
+[ORCH 19:00:17] current global_ub=2400 from MIP
+[ORCH 19:00:17] current global_ub=2400 from MIP
+[ORCH 19:00:18] current global_ub=2400 from MIP
+[ORCH 19:00:18] current global_ub=2400 from MIP
+[ORCH 19:00:19] current global_ub=2400 from MIP
+[ORCH 19:00:19] current global_ub=2400 from MIP
+[ORCH 19:00:20] current global_ub=2400 from MIP
+[ORCH 19:00:20] current global_ub=2400 from MIP
+[ORCH 19:00:21] current global_ub=2400 from MIP
+[ORCH 19:00:22] current global_ub=2400 from MIP
+[ORCH 19:00:22] current global_ub=2400 from MIP
+[ORCH 19:00:23] current global_ub=2400 from MIP
+[ORCH 19:00:23] current global_ub=2400 from MIP
+[ORCH 19:00:24] current global_ub=2400 from MIP
+[ORCH 19:00:24] current global_ub=2400 from MIP
+[ORCH 19:00:25] current global_ub=2400 from MIP
+[ORCH 19:00:25] current global_ub=2400 from MIP
+[ORCH 19:00:26] current global_ub=2400 from MIP
+[ORCH 19:00:26] current global_ub=2400 from MIP
+[ORCH 19:00:27] current global_ub=2400 from MIP
+[ORCH 19:00:27] current global_ub=2400 from MIP
+[ORCH 19:00:28] current global_ub=2400 from MIP
+[ORCH 19:00:28] current global_ub=2400 from MIP
+[ORCH 19:00:29] current global_ub=2400 from MIP
+[ORCH 19:00:29] current global_ub=2400 from MIP
+[ORCH 19:00:30] current global_ub=2400 from MIP
+[ORCH 19:00:30] current global_ub=2400 from MIP
+[ORCH 19:00:31] current global_ub=2400 from MIP
+[ORCH 19:00:31] current global_ub=2400 from MIP
+[ORCH 19:00:32] current global_ub=2400 from MIP
+[ORCH 19:00:32] current global_ub=2400 from MIP
+[ORCH 19:00:33] current global_ub=2400 from MIP
+[ORCH 19:00:33] current global_ub=2400 from MIP
+[ORCH 19:00:34] current global_ub=2400 from MIP
+[ORCH 19:00:34] current global_ub=2400 from MIP
+[ORCH 19:00:35] current global_ub=2400 from MIP
+[ORCH 19:00:35] current global_ub=2400 from MIP
+[ORCH 19:00:36] current global_ub=2400 from MIP
+[ORCH 19:00:36] current global_ub=2400 from MIP
+[ORCH 19:00:37] current global_ub=2400 from MIP
+[ORCH 19:00:37] current global_ub=2400 from MIP
+[ORCH 19:00:38] current global_ub=2400 from MIP
+[ORCH 19:00:38] current global_ub=2400 from MIP
+[ORCH 19:00:39] current global_ub=2400 from MIP
+[ORCH 19:00:39] current global_ub=2400 from MIP
+[ORCH 19:00:40] current global_ub=2400 from MIP
+[ORCH 19:00:40] current global_ub=2400 from MIP
+[ORCH 19:00:41] current global_ub=2400 from MIP
+[ORCH 19:00:41] current global_ub=2400 from MIP
+[ORCH 19:00:42] current global_ub=2400 from MIP
+[ORCH 19:00:42] current global_ub=2400 from MIP
+[ORCH 19:00:43] current global_ub=2400 from MIP
+[ORCH 19:00:43] current global_ub=2400 from MIP
+[ORCH 19:00:44] current global_ub=2400 from MIP
+[ORCH 19:00:44] current global_ub=2400 from MIP
+[ORCH 19:00:45] current global_ub=2400 from MIP
+[ORCH 19:00:45] current global_ub=2400 from MIP
+[ORCH 19:00:46] current global_ub=2400 from MIP
+[ORCH 19:00:46] current global_ub=2400 from MIP
+[ORCH 19:00:47] current global_ub=2400 from MIP
+[ORCH 19:00:46] current global_ub=2400 from MIP
+[ORCH 19:00:46] current global_ub=2400 from MIP
+[ORCH 19:00:47] current global_ub=2400 from MIP
+[ORCH 19:00:47] current global_ub=2400 from MIP
+[ORCH 19:00:48] current global_ub=2400 from MIP
+[ORCH 19:00:48] current global_ub=2400 from MIP
+[ORCH 19:00:49] current global_ub=2400 from MIP
+[ORCH 19:00:49] current global_ub=2400 from MIP
+[ORCH 19:00:50] current global_ub=2400 from MIP
+[ORCH 19:00:50] current global_ub=2400 from MIP
+[ORCH 19:00:51] current global_ub=2400 from MIP
+[ORCH 19:00:51] current global_ub=2400 from MIP
+[ORCH 19:00:52] current global_ub=2400 from MIP
+[ORCH 19:00:52] current global_ub=2400 from MIP
+[ORCH 19:00:53] current global_ub=2400 from MIP
+[ORCH 19:00:53] current global_ub=2400 from MIP
+[ORCH 19:00:54] current global_ub=2400 from MIP
+[ORCH 19:00:54] current global_ub=2400 from MIP
+[ORCH 19:00:55] current global_ub=2400 from MIP
+[ORCH 19:00:55] current global_ub=2400 from MIP
+[ORCH 19:00:56] current global_ub=2400 from MIP
+[ORCH 19:00:56] current global_ub=2400 from MIP
+[ORCH 19:00:57] current global_ub=2400 from MIP
+[ORCH 19:00:57] current global_ub=2400 from MIP
+[ORCH 19:00:58] current global_ub=2400 from MIP
+[ORCH 19:00:58] current global_ub=2400 from MIP
+[ORCH 19:00:59] current global_ub=2400 from MIP
+[ORCH 19:00:59] current global_ub=2400 from MIP
+[ORCH 19:01:00] current global_ub=2400 from MIP
+[ORCH 19:01:00] current global_ub=2400 from MIP
+[ORCH 19:01:01] current global_ub=2400 from MIP
+[ORCH 19:01:02] current global_ub=2400 from MIP
+[ORCH 19:01:02] current global_ub=2400 from MIP
+[ORCH 19:01:03] current global_ub=2400 from MIP
+[ORCH 19:01:03] current global_ub=2400 from MIP
+[ORCH 19:01:04] current global_ub=2400 from MIP
+[ORCH 19:01:04] current global_ub=2400 from MIP
+[ORCH 19:01:05] current global_ub=2400 from MIP
+[ORCH 19:01:05] current global_ub=2400 from MIP
+[ORCH 19:01:06] current global_ub=2400 from MIP
+[ORCH 19:01:06] current global_ub=2400 from MIP
+[ORCH 19:01:07] current global_ub=2400 from MIP
+[ORCH 19:01:07] current global_ub=2400 from MIP
+[ORCH 19:01:08] current global_ub=2400 from MIP
+[ORCH 19:01:08] current global_ub=2400 from MIP
+[ORCH 19:01:09] current global_ub=2400 from MIP
+[ORCH 19:01:09] current global_ub=2400 from MIP
+[ORCH 19:01:10] current global_ub=2400 from MIP
+[ORCH 19:01:10] current global_ub=2400 from MIP
+[ORCH 19:01:11] current global_ub=2400 from MIP
+[ORCH 19:01:11] current global_ub=2400 from MIP
+[ORCH 19:01:12] current global_ub=2400 from MIP
+[ORCH 19:01:12] current global_ub=2400 from MIP
+[ORCH 19:01:13] current global_ub=2400 from MIP
+[ORCH 19:01:13] current global_ub=2400 from MIP
+[ORCH 19:01:14] current global_ub=2400 from MIP
+[ORCH 19:01:14] current global_ub=2400 from MIP
+[ORCH 19:01:15] current global_ub=2400 from MIP
+[ORCH 19:01:15] current global_ub=2400 from MIP
+[ORCH 19:01:16] current global_ub=2400 from MIP
+[ORCH 19:01:16] current global_ub=2400 from MIP
+[ORCH 19:01:17] current global_ub=2400 from MIP
+[ORCH 19:01:17] current global_ub=2400 from MIP
+[ORCH 19:01:16] current global_ub=2400 from MIP
+[ORCH 19:01:17] current global_ub=2400 from MIP
+[ORCH 19:01:17] current global_ub=2400 from MIP
+[ORCH 19:01:18] current global_ub=2400 from MIP
+[ORCH 19:01:18] current global_ub=2400 from MIP
+[ORCH 19:01:19] current global_ub=2400 from MIP
+[ORCH 19:01:19] current global_ub=2400 from MIP
+[ORCH 19:01:20] current global_ub=2400 from MIP
+[ORCH 19:01:20] current global_ub=2400 from MIP
+[ORCH 19:01:21] current global_ub=2400 from MIP
+[ORCH 19:01:21] current global_ub=2400 from MIP
+[ORCH 19:01:22] current global_ub=2400 from MIP
+[ORCH 19:01:23] current global_ub=2400 from MIP
+[ORCH 19:01:23] current global_ub=2400 from MIP
+[ORCH 19:01:24] current global_ub=2400 from MIP
+[ORCH 19:01:24] current global_ub=2400 from MIP
+[ORCH 19:01:25] current global_ub=2400 from MIP
+[ORCH 19:01:25] current global_ub=2400 from MIP
+[ORCH 19:01:26] current global_ub=2400 from MIP
+[ORCH 19:01:26] current global_ub=2400 from MIP
+[ORCH 19:01:27] current global_ub=2400 from MIP
+[ORCH 19:01:27] current global_ub=2400 from MIP
+[ORCH 19:01:28] current global_ub=2400 from MIP
+[ORCH 19:01:28] current global_ub=2400 from MIP
+[ORCH 19:01:29] current global_ub=2400 from MIP
+[ORCH 19:01:29] current global_ub=2400 from MIP
+[ORCH 19:01:30] current global_ub=2400 from MIP
+[ORCH 19:01:30] current global_ub=2400 from MIP
+[ORCH 19:01:31] current global_ub=2400 from MIP
+[ORCH 19:01:31] current global_ub=2400 from MIP
+[ORCH 19:01:32] current global_ub=2400 from MIP
+[ORCH 19:01:32] current global_ub=2400 from MIP
+[ORCH 19:01:33] current global_ub=2400 from MIP
+[ORCH 19:01:33] current global_ub=2400 from MIP
+[ORCH 19:01:34] current global_ub=2400 from MIP
+[ORCH 19:01:34] current global_ub=2400 from MIP
+[ORCH 19:01:35] current global_ub=2400 from MIP
+[ORCH 19:01:35] current global_ub=2400 from MIP
+[ORCH 19:01:36] current global_ub=2400 from MIP
+[ORCH 19:01:36] current global_ub=2400 from MIP
+[ORCH 19:01:37] current global_ub=2400 from MIP
+[ORCH 19:01:37] current global_ub=2400 from MIP
+[ORCH 19:01:38] current global_ub=2400 from MIP
+[ORCH 19:01:38] current global_ub=2400 from MIP
+[ORCH 19:01:39] current global_ub=2400 from MIP
+[ORCH 19:01:39] current global_ub=2400 from MIP
+[ORCH 19:01:40] current global_ub=2400 from MIP
+[ORCH 19:01:40] current global_ub=2400 from MIP
+[ORCH 19:01:41] current global_ub=2400 from MIP
+[ORCH 19:01:41] current global_ub=2400 from MIP
+[ORCH 19:01:42] current global_ub=2400 from MIP
+[ORCH 19:01:43] current global_ub=2400 from MIP
+[ORCH 19:01:43] current global_ub=2400 from MIP
+[ORCH 19:01:44] current global_ub=2400 from MIP
+[ORCH 19:01:44] current global_ub=2400 from MIP
+[ORCH 19:01:45] current global_ub=2400 from MIP
+[ORCH 19:01:45] current global_ub=2400 from MIP
+[ORCH 19:01:46] current global_ub=2400 from MIP
+[ORCH 19:01:46] current global_ub=2400 from MIP
+[ORCH 19:01:47] current global_ub=2400 from MIP
+[ORCH 19:01:47] current global_ub=2400 from MIP
+[ORCH 19:01:48] current global_ub=2400 from MIP
+[ORCH 19:01:48] current global_ub=2400 from MIP
+[ORCH 19:01:49] current global_ub=2400 from MIP
+[ORCH 19:01:48] current global_ub=2400 from MIP
+[ORCH 19:01:48] current global_ub=2400 from MIP
+[ORCH 19:01:49] current global_ub=2400 from MIP
+[ORCH 19:01:49] current global_ub=2400 from MIP
+[ORCH 19:01:50] current global_ub=2400 from MIP
+[ORCH 19:01:50] current global_ub=2400 from MIP
+[ORCH 19:01:51] current global_ub=2400 from MIP
+[ORCH 19:01:51] current global_ub=2400 from MIP
+[ORCH 19:01:52] current global_ub=2400 from MIP
+[ORCH 19:01:52] current global_ub=2400 from MIP
+[ORCH 19:01:53] current global_ub=2400 from MIP
+[ORCH 19:01:53] current global_ub=2400 from MIP
+[ORCH 19:01:54] current global_ub=2400 from MIP
+[ORCH 19:01:54] current global_ub=2400 from MIP
+[ORCH 19:01:55] current global_ub=2400 from MIP
+[ORCH 19:01:55] current global_ub=2400 from MIP
+[ORCH 19:01:56] current global_ub=2400 from MIP
+[ORCH 19:01:56] current global_ub=2400 from MIP
+[ORCH 19:01:57] current global_ub=2400 from MIP
+[ORCH 19:01:57] current global_ub=2400 from MIP
+[ORCH 19:01:58] current global_ub=2400 from MIP
+[ORCH 19:01:58] current global_ub=2400 from MIP
+[ORCH 19:01:59] current global_ub=2400 from MIP
+[ORCH 19:01:59] current global_ub=2400 from MIP
+[ORCH 19:02:00] current global_ub=2400 from MIP
+[ORCH 19:02:00] current global_ub=2400 from MIP
+[ORCH 19:02:01] current global_ub=2400 from MIP
+[ORCH 19:02:01] current global_ub=2400 from MIP
+[ORCH 19:02:02] current global_ub=2400 from MIP
+[ORCH 19:02:02] current global_ub=2400 from MIP
+[ORCH 19:02:03] current global_ub=2400 from MIP
+[ORCH 19:02:03] current global_ub=2400 from MIP
+[ORCH 19:02:04] current global_ub=2400 from MIP
+[ORCH 19:02:04] current global_ub=2400 from MIP
+[ORCH 19:02:05] current global_ub=2400 from MIP
+[ORCH 19:02:05] current global_ub=2400 from MIP
+[ORCH 19:02:06] current global_ub=2400 from MIP
+[ORCH 19:02:07] current global_ub=2400 from MIP
+[ORCH 19:02:07] current global_ub=2400 from MIP
+[ORCH 19:02:08] current global_ub=2400 from MIP
+[ORCH 19:02:08] current global_ub=2400 from MIP
+[ORCH 19:02:09] current global_ub=2400 from MIP
+[ORCH 19:02:09] current global_ub=2400 from MIP
+[ORCH 19:02:10] current global_ub=2400 from MIP
+[ORCH 19:02:10] current global_ub=2400 from MIP
+[ORCH 19:02:11] current global_ub=2400 from MIP
+[ORCH 19:02:11] current global_ub=2400 from MIP
+[ORCH 19:02:12] current global_ub=2400 from MIP
+[ORCH 19:02:12] current global_ub=2400 from MIP
+[ORCH 19:02:13] current global_ub=2400 from MIP
+[ORCH 19:02:13] current global_ub=2400 from MIP
+[ORCH 19:02:14] current global_ub=2400 from MIP
+[ORCH 19:02:14] current global_ub=2400 from MIP
+[ORCH 19:02:15] current global_ub=2400 from MIP
+[ORCH 19:02:15] current global_ub=2400 from MIP
+[ORCH 19:02:16] current global_ub=2400 from MIP
+[ORCH 19:02:16] current global_ub=2400 from MIP
+[ORCH 19:02:17] current global_ub=2400 from MIP
+[ORCH 19:02:17] current global_ub=2400 from MIP
+[ORCH 19:02:18] current global_ub=2400 from MIP
+[ORCH 19:02:18] current global_ub=2400 from MIP
+[ORCH 19:02:19] current global_ub=2400 from MIP
+[ORCH 19:02:19] current global_ub=2400 from MIP
+[ORCH 19:02:20] current global_ub=2400 from MIP
+[ORCH 19:02:19] current global_ub=2400 from MIP
+[SAT 19:02:19] built F1 | vars=119655 | clauses=298739
+[ORCH 19:02:19] current global_ub=2400 from MIP
+[SAT 19:02:19] certifying current UB=2400 by solving cost <= 2399
+[ORCH 19:02:20] current global_ub=2400 from MIP
+[ORCH 19:02:20] current global_ub=2400 from MIP
+[ORCH 19:02:21] current global_ub=2400 from MIP
+[ORCH 19:02:21] current global_ub=2400 from MIP
+[ORCH 19:02:22] current global_ub=2400 from MIP
+[ORCH 19:02:22] current global_ub=2400 from MIP
+[ORCH 19:02:23] current global_ub=2400 from MIP
+[ORCH 19:02:23] current global_ub=2400 from MIP
+[ORCH 19:02:24] current global_ub=2400 from MIP
+[ORCH 19:02:24] current global_ub=2400 from MIP
+[ORCH 19:02:25] current global_ub=2400 from MIP
+[ORCH 19:02:25] current global_ub=2400 from MIP
+[ORCH 19:02:26] current global_ub=2400 from MIP
+[ORCH 19:02:26] current global_ub=2400 from MIP
+[ORCH 19:02:27] current global_ub=2400 from MIP
+[ORCH 19:02:27] current global_ub=2400 from MIP
+[ORCH 19:02:28] current global_ub=2400 from MIP
+[ORCH 19:02:28] current global_ub=2400 from MIP
+[ORCH 19:02:29] current global_ub=2400 from MIP
+[ORCH 19:02:30] current global_ub=2400 from MIP
+[ORCH 19:02:30] current global_ub=2400 from MIP
+[ORCH 19:02:31] current global_ub=2400 from MIP
+[ORCH 19:02:31] current global_ub=2400 from MIP
+[ORCH 19:02:32] current global_ub=2400 from MIP
+[ORCH 19:02:32] current global_ub=2400 from MIP
+[ORCH 19:02:33] current global_ub=2400 from MIP
+[ORCH 19:02:33] current global_ub=2400 from MIP
+[ORCH 19:02:34] current global_ub=2400 from MIP
+[ORCH 19:02:34] current global_ub=2400 from MIP
+[ORCH 19:02:35] current global_ub=2400 from MIP
+[ORCH 19:02:35] current global_ub=2400 from MIP
+[ORCH 19:02:36] current global_ub=2400 from MIP
+[ORCH 19:02:36] current global_ub=2400 from MIP
+[ORCH 19:02:37] current global_ub=2400 from MIP
+[ORCH 19:02:37] current global_ub=2400 from MIP
+[ORCH 19:02:38] current global_ub=2400 from MIP
+[ORCH 19:02:38] current global_ub=2400 from MIP
+[ORCH 19:02:39] current global_ub=2400 from MIP
+[ORCH 19:02:39] current global_ub=2400 from MIP
+[ORCH 19:02:40] current global_ub=2400 from MIP
+[ORCH 19:02:40] current global_ub=2400 from MIP
+[ORCH 19:02:41] current global_ub=2400 from MIP
+[ORCH 19:02:41] current global_ub=2400 from MIP
+[ORCH 19:02:42] current global_ub=2400 from MIP
+[ORCH 19:02:42] current global_ub=2400 from MIP
+[ORCH 19:02:43] current global_ub=2400 from MIP
+[ORCH 19:02:43] current global_ub=2400 from MIP
+[ORCH 19:02:44] current global_ub=2400 from MIP
+[ORCH 19:02:45] current global_ub=2400 from MIP
+[ORCH 19:02:45] current global_ub=2400 from MIP
+[ORCH 19:02:46] current global_ub=2400 from MIP
+[ORCH 19:02:46] current global_ub=2400 from MIP
+[ORCH 19:02:47] current global_ub=2400 from MIP
+[ORCH 19:02:47] current global_ub=2400 from MIP
+[ORCH 19:02:48] current global_ub=2400 from MIP
+[ORCH 19:02:48] current global_ub=2400 from MIP
+[ORCH 19:02:49] current global_ub=2400 from MIP
+[ORCH 19:02:49] current global_ub=2400 from MIP
+[ORCH 19:02:50] current global_ub=2400 from MIP
+[ORCH 19:02:50] current global_ub=2400 from MIP
+[ORCH 19:02:51] current global_ub=2400 from MIP
+[ORCH 19:02:50] current global_ub=2400 from MIP
+[ORCH 19:02:50] current global_ub=2400 from MIP
+[ORCH 19:02:51] current global_ub=2400 from MIP
+[ORCH 19:02:51] current global_ub=2400 from MIP
+[ORCH 19:02:52] current global_ub=2400 from MIP
+[ORCH 19:02:52] current global_ub=2400 from MIP
+[ORCH 19:02:53] current global_ub=2400 from MIP
+[ORCH 19:02:53] current global_ub=2400 from MIP
+[ORCH 19:02:54] current global_ub=2400 from MIP
+[ORCH 19:02:54] current global_ub=2400 from MIP
+[ORCH 19:02:55] current global_ub=2400 from MIP
+[ORCH 19:02:55] current global_ub=2400 from MIP
+[ORCH 19:02:56] current global_ub=2400 from MIP
+[ORCH 19:02:56] current global_ub=2400 from MIP
+[ORCH 19:02:57] current global_ub=2400 from MIP
+[ORCH 19:02:57] current global_ub=2400 from MIP
+[ORCH 19:02:58] current global_ub=2400 from MIP
+[ORCH 19:02:58] current global_ub=2400 from MIP
+[ORCH 19:02:59] current global_ub=2400 from MIP
+[ORCH 19:02:59] current global_ub=2400 from MIP
+[ORCH 19:03:00] current global_ub=2400 from MIP
+[ORCH 19:03:00] current global_ub=2400 from MIP
+[ORCH 19:03:01] current global_ub=2400 from MIP
+[ORCH 19:03:01] current global_ub=2400 from MIP
+[ORCH 19:03:02] current global_ub=2400 from MIP
+[ORCH 19:03:02] current global_ub=2400 from MIP
+[ORCH 19:03:03] current global_ub=2400 from MIP
+[ORCH 19:03:03] current global_ub=2400 from MIP
+[ORCH 19:03:04] current global_ub=2400 from MIP
+[ORCH 19:03:04] current global_ub=2400 from MIP
+[ORCH 19:03:05] current global_ub=2400 from MIP
+[ORCH 19:03:05] current global_ub=2400 from MIP
+[ORCH 19:03:06] current global_ub=2400 from MIP
+[ORCH 19:03:06] current global_ub=2400 from MIP
+[ORCH 19:03:07] current global_ub=2400 from MIP
+[ORCH 19:03:07] current global_ub=2400 from MIP
+[ORCH 19:03:08] current global_ub=2400 from MIP
+[ORCH 19:03:08] current global_ub=2400 from MIP
+[ORCH 19:03:09] current global_ub=2400 from MIP
+[ORCH 19:03:09] current global_ub=2400 from MIP
+[ORCH 19:03:10] current global_ub=2400 from MIP
+[ORCH 19:03:11] current global_ub=2400 from MIP
+[ORCH 19:03:11] current global_ub=2400 from MIP
+[ORCH 19:03:12] current global_ub=2400 from MIP
+[ORCH 19:03:12] current global_ub=2400 from MIP
+[ORCH 19:03:13] current global_ub=2400 from MIP
+[ORCH 19:03:13] current global_ub=2400 from MIP
+[ORCH 19:03:14] current global_ub=2400 from MIP
+[ORCH 19:03:14] current global_ub=2400 from MIP
+[ORCH 19:03:15] current global_ub=2400 from MIP
+[ORCH 19:03:15] current global_ub=2400 from MIP
+[MIP 19:03:15] OPTIMAL by MIP | obj=2400.000000 | solve=499.95s | total=500.29s
+[ORCH 19:03:16] current global_ub=2400 from MIP
+[ORCH 19:03:16] OPTIMAL found: 2400 by MIP
+
+================================================================================
+FINAL HYBRID STATE
+================================================================================
+best_source: MIP
+deadline_ts: 1774529717.956728
+global_lb: None
+global_ub: 2400
+instance: instances/instance12.txt
+mip_objbound: 2400.0
+mip_objval: 2400.0
+mip_solve_time_sec: 499.95361778100005
+mip_status: RUNNING
+mip_status_code: 2
+mip_total_time_sec: 500.28560056100014
+optimal_cost: 2400
+sat_status: None
+status: OPTIMAL
+total_runtime_sec: 500.5070577209999
+updated_at: 1774526596.0853758
+================================================================================
+

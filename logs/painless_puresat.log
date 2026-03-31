@@ -1,0 +1,108 @@
+===== Running instance1 =====
+[20:26:58] parsed: nbRackModels=2, nbRacks=5, nbCardTypes=4, totalCardInstances=17
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
+===== Running instance2 =====
+[20:26:58] parsed: nbRackModels=2, nbRacks=10, nbCardTypes=4, totalCardInstances=34
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
+===== Running instance3 =====
+[20:26:58] parsed: nbRackModels=2, nbRacks=12, nbCardTypes=6, totalCardInstances=45
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
+===== Running instance4 =====
+[20:26:58] parsed: nbRackModels=6, nbRacks=9, nbCardTypes=6, totalCardInstances=25
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
+===== Running instance5 =====
+[20:26:59] parsed: nbRackModels=2, nbRacks=5, nbCardTypes=5, totalCardInstances=26
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
+===== Running instance6 =====
+[20:26:59] parsed: nbRackModels=2, nbRacks=6, nbCardTypes=6, totalCardInstances=25
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
+===== Running instance7 =====
+[20:26:59] parsed: nbRackModels=2, nbRacks=7, nbCardTypes=6, totalCardInstances=35
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
+===== Running instance8 =====
+[20:26:59] parsed: nbRackModels=4, nbRacks=8, nbCardTypes=6, totalCardInstances=36
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
+===== Running instance9 =====
+[20:26:59] parsed: nbRackModels=6, nbRacks=6, nbCardTypes=6, totalCardInstances=19
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
+===== Running instance10 =====
+[20:26:59] parsed: nbRackModels=2, nbRacks=14, nbCardTypes=6, totalCardInstances=57
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
+===== Running instance11 =====
+[20:26:59] parsed: nbRackModels=6, nbRacks=12, nbCardTypes=6, totalCardInstances=47
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
+===== Running instance12 =====
+[20:26:59] parsed: nbRackModels=6, nbRacks=13, nbCardTypes=7, totalCardInstances=62
+Traceback (most recent call last):
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 796, in <module>
+    main()
+  File "/home/hungle/RCP_bench/src/PureSAT_painless.py", line 757, in main
+    raise FileNotFoundError(
+FileNotFoundError: PainLess binary not found: /home/hungle/RCP_bench/solvers/painless/build/release/painless_release
+Expected layout for your project: RCP_BENCH/solvers/painless/build/release/painless_release
